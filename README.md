@@ -13,3 +13,11 @@ RuntimeError: [enforce fail at alloc_cpu.cpp:73] . DefaultCPUAllocator: can't al
 ```
 
 So we shall need some splitting. But first I can try inputting just the first 20 seconds.
+
+
+
+# Addendum 2022-06-02T11:34:08
+
+I found that I can input 10 minutes worth of audio and the model still works. This comes at a cost: where one minute of data takes 11s to transcribe, 10 minutes takes 11 minutes, which is a whopping 18dB slower.
+
+I still chose that option because this means we will have less aligning to do.

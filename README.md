@@ -21,3 +21,16 @@ So we shall need some splitting. But first I can try inputting just the first 20
 I found that I can input 10 minutes worth of audio and the model still works. This comes at a cost: where one minute of data takes 11s to transcribe, 10 minutes takes 11 minutes, which is a whopping 18dB slower.
 
 I still chose that option because this means we will have less aligning to do.
+
+# Addendum 2022-06-03T12:06:33
+
+Finally managed to run all models. The metrics are not stellar:
+
+| model                                           |      wer |      cer |
+|:------------------------------------------------|---------:|---------:|
+| classla/wav2vec2-xls-r-parlaspeech-hr-lm        | 0.661052 | 0.488822 |
+| classla/wav2vec2-xls-r-parlaspeech-hr           | 0.692956 | 0.459903 |
+| classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.801429 | 0.573916 |
+| classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.75804  | 0.616048 |
+
+The transcript were diffed and are ready for inspection in directory [diffs](diffs).

@@ -1,4 +1,6 @@
-Model: classla/wav2vec2-xls-r-parlaspeech-hr, cer: 0.45990287439296496, wer: 0.6929555895865237
+Model: classla/wav2vec2-xls-r-parlaspeech-hr,
+cer: 0.45990287439296496, 
+wer: 0.6929555895865237
 
 
   ukoliko

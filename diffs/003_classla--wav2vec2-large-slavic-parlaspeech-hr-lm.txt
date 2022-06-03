@@ -1,4 +1,6 @@
-Model: classla/wav2vec2-large-slavic-parlaspeech-hr-lm, cer: 0.6160476002975018, wer: 0.7580398162327718
+Model: classla/wav2vec2-large-slavic-parlaspeech-hr-lm,
+cer: 0.6160476002975018, 
+wer: 0.7580398162327718
 
 
   ukoliko

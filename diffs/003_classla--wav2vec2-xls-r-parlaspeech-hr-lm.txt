@@ -1,0 +1,561 @@
+Model: classla/wav2vec2-xls-r-parlaspeech-hr-lm, cer: 0.4888218051362821, wer: 0.6610515569167943
+
+
+  ukoliko
+  ste
++ i
++ teevziejsupravo
+- gledali
+- vesti
+- televizije
+- b92
+- koje
+- su
+- upravo
+  završene
+  svakako
+  vam
+  je
+- pretpostavljam
+- poznato
++ pred
++ posveomoznato
+  da
+- je
+  u
+- ovim
+?   ^
+
++ ovom
+?   ^
+
+- trenucima
+? ^  ^
+
++ srelucima
+? ^  ^
+
+  u
++ sednicavlade
+- toku
+- sednica
+- vlade
+  srbije
+  koja
+  priprema
+  nacrt
+  rezolucije
+  o
+  kosovu
+  koji
+  bi
+- sutra
+  trebalo
+  da
+  se
+  nađe
+  pred
+  novim
+  sazivom
+  republičkog
+  parlamenta
++ ne
+- no
+- otom
+- potom
+- o
+- sednici
+  vlade
+  i
+  o
+  rezoluciji
+  nešto
+  kasnije
+- tokom
+- večeri
+- kad
+- sednica
+- vlade
+- bude
+- završena
+- ili
+  sutra
+- ujutru
+?      ^
+
++ ujutro
+?      ^
+
+  sada
+  o
++ jedndrugiikoje
++ akođetedazabiši
++ to
+- jednoj
+- drugoj
+- temi
+- koja
+- je
+- takođe
+- tema
+- dana
+- za
+- bivšim
+- komandantom
+  posebnih
+- jedinica
++ činjenica
+  policije
+  i
++ dermerijeuavlivće
++ godi
+- žandarmerije
+- goranom
+- radosavljevićem
+- gurijem
+- raspisana
+?         ^
+
++ raspisane
+?         ^
+
+- je
+  prema
+  agencijskim
+- vestima
++ vijestima
+?  ++
+
+  policijska
+- potraga
++ pa
+  na
+- nivou
+?     -
+
++ nivo
++ u
+  srbije
+  jer
+  se
+- radosavljević
+? --       ^
+
++ dostavljivić
+?    +    ^
+
+  nije
+  pojavio
+  na
+  sudu
+- gde
++ gdje
+?   +
+
+  je
+  pozvan
+  u
++ dokaz
+- svojstvu
+- svedoka
+  na
+  suđenju
+  optuženima
+  za
+  pomaganje
+  u
+- ubistvu
+- američkih
++ bistvuameričkih
+? ++++++
+
+- državljana
+?          -
+
++ državljan
+  albanskog
+- porekla
++ preko
+  braće
+- bitići
++ bit
++ ići
+  prema
+  informacijama
+  iz
+  mupa
+- koje
+?    ^
+
++ koji
+?    ^
+
+  je
+  danas
+- saopštio
++ sam
+- predsedavajući
++ predsjedavajući
+?      +
+
+  sudskog
+- veća
++ vijeća
+?  ++
+
++ sa
+- sudija
+- vesko
+- krstajić
+- radosavljević
+?          ^  ^
+
++ radostavljivie
+?      +    ^  ^
+
+- se
+  nalazi
+  u
+- bekstvu
+- gost
+- poligrafa
+- večeras
+- je
+- portparol
+- tužilaštva
+?       ----
+
++ tužila
++ zaveli
++ a
+- za
+- ratne
+- zločine
+- bruno
+- vekarić
+- gospodine
+- vekariću
+- dobro
+- veče
+- dobro
+- veče
+- hteo
+- sam
+- da
+- vas
+- zamolim
+- da
+- nas
+- na
+  početku
+  možda
++ poeti
+- podsetite
+- na
+  najvažnije
+  činjenice
+  koje
+  su
+- u
+  vezi
+  sa
+  ovim
+  slučajem
++ u
+- ubistva
+? -    ^
+
++ bistra
+?     ^
+
++ tužio
+- braće
+- bitići
+- dakle
+- tužilaštvo
+  je
+- za
+  sada
+- podiglo
++ pod
+  optužnicu
+  protiv
+- dva
+- lica
++ ali
++ a
+  u
+  slučaju
+  ubistva
+  braće
+- bitići
+?     --
+
++ biti
++ ići
+- vratio
+?      -
+
++ vrati
+- bih
+?   -
+
++ bi
+  se
+  možda
+- na
+  sam
+- događaj
++ događaji
+?        +
+
+  koji
+  je
++ i
+  na
+  neki
+  način
++ isto
+- i
+- izdejstvovao
+- ovu
+  optužnicu
+  dakle
+  radi
+  se
+  o
+  jednom
+  zločinu
+- ratnom
++ ratu
+  zločinu
++ zločana
+- zločinu
+- nad
+  ratnim
+- zarobljenicima
+?   --
+
++ zrabljenicima
+?  +
+
++ presenorećano
+- precizno
+- rečeno
+  koji
+  se
++ oderu
+- odigrao
+- u
+- julu
+- ’99
+? -
+
++ 99
+  godine
+  kada
+  su
+  nakon
+  izdržavanja
+  prekršajne
+  kazne
++ ne
+- nepoznata
+? --
+
++ poznata
+  lica
+  odvela
+- a
+  zatim
+  nešto
+  kasnije
+  na
+  izuzetno
+- svirep
++ svirat
+  način
+  i
+- ubila
+? -
+
++ bila
+- braću
++ vraća
+- bitići
+?     --
+
++ biti
++ ići
+  ovaj
+  slučaj
+  nije
+  samo
+  po
+  tome
+- osoben
+?      -
+
++ osobe
++ nije
+- on
+- je
+- specifičan
+?  ^ ^
+
++ stečifičani
+?  ^ ^      +
+
++ to
++ me
+- i
+- po
+- tome
+  što
+- su
+- to
++ sto
+? +
+
+- bila
+?    ^
+
++ bilo
+?    ^
+
+  tri
+- američka
+?        ^
+
++ američki
+?        ^
+
+- državljana
+?          ^
+
++ državljani
+?          ^
+
+  tako
+  da
+  mi
+  sada
+  imamo
+  nekoliko
+  dimenzija
+- ovog
++ i
++ u
+- slučaja
+?       ^
+
++ slučaju
+?       ^
+
+- jedna
+?     -
+
++ jedan
+?    +
+
+  je
+- procesnopravna
++ procesno
++ pravo
++ da
++ je
++ procesna
++ pravna
+  dimenzija
+  druga
+  je
+  politička
+  dimenzija
+- ako
+? -
+
++ ko
+  hoćete
+  ili
+  pak
+- spoljnopolitička
++ je
++ s
++ podno
++ politička
+  dimenzija
+  s
+  obzirom
+- na
+- to
+  da
+  su
+  ovo
+  bili
+- strani
+?      ^
+
++ strane
+?      ^
+
+- državljani
+?          -
+
++ državljan
+- takođe
++ također
+?       +
+
+- specifičnost
+?           --
+
++ specifično
++ slu
+  ovog
+- procesnopravnog
++ procesno
++ pravno
+- dela
++ djela
+?  +
+
+- je
+  da
+  istovremeno
+  dok
+  smo
+  mi
++ odiliistraguodo
++ no
++ isržnmsudija
++ tužilostvu
+- vodili
+- istragu
+- odnosno
+- istražni
+- sudija
+- tužilaštvo
+  policija
+  istragu
+- vodi
+?    ^
+
++ vode
+?    ^
+
+  i
+  federalni
+- istražni
++ rani
+- biro
++ biroe
+?     +
+
+- sada
++ američkih
++ država
+  to
+  je
+- veoma
++ ma
+  zanimljivo

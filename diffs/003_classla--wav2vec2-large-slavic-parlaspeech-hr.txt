@@ -1,0 +1,562 @@
+Model: classla/wav2vec2-large-slavic-parlaspeech-hr, cer: 0.5739160869755436, wer: 0.8014293006636038
+
+
+  ukoliko
+  ste
++ g
++ ezij
++ 592
+- gledali
+- vesti
+- televizije
+- b92
+- koje
+?    ^
+
++ koji
+?    ^
+
+  su
++ upr
+- upravo
+- završene
+  svakako
+  vam
+  je
+- pretpostavljam
+- poznato
+  da
+  je
+  u
+  ovim
+- trenucima
++ trenucimao
+?          +
+
+  u
+  toku
++ sjedilkp
+- sednica
+- vlade
+- srbije
+- koja
+- priprema
+  nacrt
+  rezolucije
+  o
+  kosovu
+  koji
+  bi
++ strebai
++ dp
++ sikottm
+- sutra
+- trebalo
+- da
+- se
+- nađe
+- pred
+- novim
+- sazivom
+- republičkog
+- parlamenta
+- no
+- otom
+- potom
+?  - -
+
++ ptm
+- o
+- sednici
++ prsjednici
+? ++ +
+
+  vlade
+  i
+- o
+  rezoluciji
++ st
+- nešto
+- kasnije
+- tokom
+- večeri
+- kad
+- sednica
+- vlade
+- bude
+- završena
+- ili
+- sutra
+- ujutru
+- sada
+? -
+
++ ada
+  o
+  jednoj
+- drugoj
+?   -
+
++ drgojte
+?      ++
+
+- temi
+- koja
+?    ^
+
++ koji
+?    ^
+
+  je
++ tk
++ im
++ ko
++ tm
+- takođe
+- tema
+- dana
+- za
+- bivšim
+- komandantom
+  posebnih
+  jedinica
+  policije
+  i
++ ivaerie
++ ajeći
+- žandarmerije
+- goranom
+- radosavljevićem
+- gurijem
+- raspisana
+- je
+- prema
++ drpprema
+? +++
+
+- agencijskim
+?       -   -
+
++ agenciski
+- vestima
+- policijska
+?    --
+
++ impolijska
+? ++
+
+- potraga
+?   --
+
++ poaga
++ n
++ nou
++ srbi
++ jer
++ sćnije
++ po
++ javi
+  na
++ sudde
++ poz
+- nivou
+- srbije
+- jer
+- se
+- radosavljević
+- nije
+- pojavio
+- na
+- sudu
+- gde
+- je
+- pozvan
+  u
+- svojstvu
+?      --
+
++ svojsu
+- svedoka
+- na
++ sna
+? +
+
+  suđenju
+- optuženima
+? -    -
+
++ ptužnima
++ z
++ p
++ bistvmidržavljan
++ alban
++ porracoj
++ dnasso
++ pedsjdajućke
++ o
++ sance
+- za
+- pomaganje
+- u
+- ubistvu
+- američkih
+- državljana
+- albanskog
+- porekla
+- braće
+- bitići
+- prema
+- informacijama
+- iz
+- mupa
+- koje
+- je
+- danas
+- saopštio
+- predsedavajući
+- sudskog
+- veća
+- sudija
+- vesko
+- krstajić
+- radosavljević
+- se
+  nalazi
+  u
+- bekstvu
+- gost
+- poligrafa
+- večeras
+  je
++ pp
++ pl
++ z
+- portparol
+- tužilaštva
+- za
+- ratne
+- zločine
+- bruno
+- vekarić
+- gospodine
+- vekariću
+- dobro
+- veče
+- dobro
+- veče
+- hteo
+  sam
+  da
++ dapetk
++ posjee
++ no
+- vas
+- zamolim
+- da
+- nas
+- na
+- početku
+- možda
+- podsetite
+- na
+  najvažnije
+- činjenice
+?   --  -
+
++ čience
+  koje
+  su
+  u
+  vezi
+  sa
+- ovim
+?    -
+
++ ovi
+  slučajem
+- ubistva
+- braće
+- bitići
+- dakle
+? -
+
++ akle
++ otužiliose
+- tužilaštvo
+- je
+- za
+- sada
++ osada
+? +
+
+- podiglo
+?     ^
+
++ podililo
+?     ^^
+
+- optužnicu
+?         -
+
++ optužnic
+- protiv
+?      -
+
++ proti
+- dva
++ vaali
+- lica
+? -
+
++ ica
+  u
+  slučaju
+- ubistva
+? -    -
+
++ bista
+- braće
+- bitići
++ br
++ bi
+  vratio
+- bih
+?   -
+
++ bi
+  se
+  možda
+  na
+  sam
+  događaj
+  koji
+  je
++ i
+  na
+  neki
+  način
+  i
++ izistvao
+- izdejstvovao
+- ovu
+  optužnicu
+  dakle
+  radi
+- se
++ sa
+  o
+  jednom
++ zlopčin
++ u
++ ratnum
+  zločinu
++ zločnna
+- ratnom
+- zločinu
+- zločinu
+- nad
+  ratnim
+- zarobljenicima
+? --    -  -
+
++ roblencima
+- precizno
++ prci
++ na
+- rečeno
++ rečteno
+?    +
+
+  koji
+  se
+- odigrao
+?      --
+
++ odigr
+- u
+- julu
+- ’99
+? -
+
++ 99
+- godine
+?    -
+
++ godne
+  kada
+  su
+  nakon
+- izdržavanja
+?   -
+
++ izržavanja
+  prekršajne
+  kazne
+- nepoznata
+- lica
++ nepon
++ nato
+- odvela
++ dicodvela
+? +++
+
+  a
+- zatim
++ zatnim
+?    +
+
+  nešto
+  kasnije
+  na
+  izuzetno
+- svirep
++ sret
+  način
+  i
+  ubila
+- braću
+?    ^
+
++ braiu
+?    ^
+
+- bitići
+?     --
+
++ biti
++ ići
+- ovaj
+?   ^
+
++ ovij
+?   ^
+
+  slučaj
+  nije
+  samo
+  po
+  tome
+  osoben
+  on
+  je
+- specifičan
+?    -     -
+
++ speifiča
+- i
++ ni
+  po
+  tome
+  što
+- su
+- to
++ što
+? +
+
+- bila
+?    -
+
++ bil
+- tri
++ ptri
+? +
+
++ j
+- američka
+?  ^
+
++ averička
+?  ^
+
+- državljana
++ dža
+- tako
+? ^
+
++ dako
+? ^
+
+  da
+  mi
+  sada
+  imamo
+  nekoliko
++ dienzija
++ slučaju
++ jedan
++ je
++ prosesno
++ prava
++ jedna
++ je
++ protesno
++ pravna
+  dimenzija
+- ovog
+- slučaja
+- jedna
+- je
+- procesnopravna
+- dimenzija
+- druga
+? -
+
++ ruga
+- je
+- politička
+?         ^
+
++ političke
+?         ^
+
+- dimenzija
+?         ^
+
++ dimenziji
+?         ^
+
+  ako
+- hoćete
++ koćite
+  ili
+  pak
+- spoljnopolitička
++ spolno
++ politička
+  dimenzija
+  s
+  obzirom
+- na
+- to
+  da
+  su
+  ovo
+  bili
+- strani
+?  -
+
++ srani
+- državljani
+?     -- - -
+
++ držajn
+- takođe
++ također
+?       +
+
+- specifičnost
++ steti
++ tfičnost
+  ovog
+- procesnopravnog
++ procesno
++ pravnog
+- dela
++ djela
+?  +
+
+- je
++ j
++ e
+  da
+  istovremeno

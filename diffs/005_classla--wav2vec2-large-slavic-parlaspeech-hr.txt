@@ -1,0 +1,585 @@
+Model: classla/wav2vec2-large-slavic-parlaspeech-hr,
+cer: 0.5575483584080635, 
+wer: 0.7480314960629921
+
+
++ ladiizviše
+- mladi
+- iz
+- više
+  od
+  30
+  zemalja
+- evrope
+?  ^
+
++ europe
+?  ^
+
+- trenutno
+?      ---
+
++ trenu
++ o
+  se
+- nalaze
++ l
+  u
+  nišu
++ a
+  povod
+  je
+- letnja
++ et
+- akademija
+?         ^
+
++ akademije
+?         ^
+
+- evropskog
+?  ^
+
++ europskog
+?  ^
+
+- parlamenta
++ plannta
+  mladih
+  tim
+  povodom
+  sa
+  nama
++ ustudio
+- u
+- stidiju
+  je
+  marko
+  nedeljković
+  koji
+  se
+  nalazi
++ ognci
++ pa
+- u
+- organizaciji
+- ovog
+- događaja
+- dobodošli
+- u
+- studio
+- južnih
+- vesti
+- hvala
+- za
+- početak
++ započetak
+? ++
+
+- nam
++ m
+  recite
+  šta
+- svi
++ s
+  ovi
+  mladi
+  ljudi
+  rade
+  u
+  nišu
+  koje
+  su
+- aktivnosti
+?    -     -
+
++ aktvnost
+- letnje
+?     -
+
++ letne
+  akademije
+- evropskog
++ euopsg
+- parlameta
+?     - ^
+
++ parlmnta
+?      ^
+
++ ladiu
+- mladih
+- u
+- nišu
+?   ^
+
++ nisu
+?   ^
+
+  su
+  se
+  za
+  ova
+- 4
++ čeri
+- dana
++ danona
+?    ++
+
+  okupili
+  mladi
+- iz
++ s
+  31
+  zemlje
+- evrope
+?  ^
+
++ europe
+?  ^
+
+  koji
+- su
++ isu
+? +
+
+  članovi
+  upravnih
+  odbora
+- njihovih
+?  -
+
++ nihovih
+- organizacija
+?            ^
+
++ organizaciju
+?            ^
+
+- u
+  svojim
+  državama
+  oni
+  će
+  na
+- ovoj
+?    -
+
++ ovo
+- letnjoj
++ etne
+- akademji
+?       -
+
++ akademi
+  učiti
+- o
+  raznim
+  granama
+  vođenja
+  jedne
+  organizacije
+- počevši
++ počevšli
+?       +
+
+  od
+- okupljanja
++ p
+- sredstava
+?  - -
+
++ sestava
+  bitnosti
+  inkluzije
+  regionalnog
+  razvoja
+  kako
+  se
+  vode
+  veliki
+  projekti
+- koji
+- obuhvataju
+?        ^
+
++ kojiobuhvatuju
+? ++++       ^
+
+  razne
+  aspekte
+- unutar
+- orgaznizovanja
+?     -   ^
+
++ organiizivanija
+?       + ^   +
+
++ i
++ sličn
++ a
++ znač
+  među
+- njima
+?     ^
+
++ njime
+?     ^
+
+  su
+  i
+  mladi
+- iz
++ i
+  srbije
+  između
+  ostalog
+  i
+- mladi
++ mladih
+?      +
+
+- iz
+  srbije
+  osim
+- članova
+?       ^
+
++ članovi
+?       ^
+
+  upravnog
+  odbora
+  tu
+  su
+  i
+  članovi
+  naših
+  timova
+  kako
+- timova
+?     --
+
++ timo
+  za
+- prikupljanje
+- sredstava
+- tako
+- i
+- pr
++ pre
+?   +
+
+- timovi
++ ko
++ prvjnjesstavaakoji
++ pijerti
++ ima
+  tima
+  za
+  ljudske
+  resurse
+  i
+  drugih
++ timato
+- timova
+- to
+  su
+  ljudi
+  koji
+  su
+  već
+  u
+- evropskom
+?  ^
+
++ europskom
+?  ^
+
+  parlamentu
+  mladih
+- srbije
++ srb
+  da
+- ovaj
++ ovenu
+- događaj
+?       -
+
++ događa
+- je
+  malo
+- specifičan
+?         -
+
++ specifično
+?          +
+
+  dešava
+  se
++ samo
+- jednom
++ jedtnom
+?    +
+
+  godišnje
+  i
+- on
+- okuplja
+?       -
+
++ onokuplj
+? ++
+
+  samo
+- iskusne
++ isku
++ sne
+  članove
+- evropskog
+?  ^
+
++ europskog
+?  ^
+
+  parlamenta
+  mladih
+  jer
+- je
+  ovo
+  događaj
+  upravo
++ z
+  za
+  vođenje
+  organizacije
+  za
+- mlađe
+?     ^
+
++ mlađi
+?     ^
+
++ članoviamodrugi
+- članove
+- imamo
+- druge
+- konferencije
+?            ^
+
++ konferenciji
+?            ^
+
+- koje
+?    ^
+
++ koji
+?    ^
+
+- organizujemo
+?         ^^
+
++ organizuramo
+?         ^^
+
+  u
+  toku
+- godine
+?     --
+
++ godi
+  to
+- je
+  jeste
+  jedan
+  veliki
+- događaj
++ dodođe
+  za
++ eupskpntnldihpzčćega
+- evropski
+- parlament
+- mladih
+- zbog
+- čega
+  se
+  ove
+  godine
+- održava
+?      -
+
++ održaa
++ uništukako
++ mislmo
++ veia
+- u
+- nišu
+- mi
+- smo
+- veoma
+  ponosni
+  jer
++ ovaj
++ pt
++ ltne
+- je
+- ovo
+- 5
+- letnja
+- akademija
+?         ^
+
++ akademiji
+?         ^
+
+  po
+  redu
+- prve
+- 3
++ pa
++ tri
+  su
+  bile
+- održane
+?       ^
+
++ održani
+?       ^
+
+  u
+  berlinu
+  jer
++ ihje
+- ih
+- je
+- održavala
+?         ^
+
++ održavali
+?         ^
+
+- mešunarodna
+?   ^
+
++ međunarodna
+?   ^
+
+  kancelarija
+  koja
+  se
+  tamo
+  nalazi
+- 4
++ četvrto
+  je
+  bila
+- održana
+?       ^
+
++ održavno
+?      + ^
+
+- u
+- portu
+? ^
+
++ fortu
+? ^
+
+  i
+  nakon
+- berlina
+?       ^
+
++ berlini
+?       ^
+
++ potala
++ nisu
+- i
+- porta
+- niš
+- je
+- dobio
+?     -
+
++ dobi
+  priliku
+- i
+  čast
+  da
+- organizuje
++ orga
++ ni
++ z
+- letnju
+?      ^
+
++ letnje
+?      ^
+
++ a
+- akademiju
+? -
+
++ kademiju
+  komisija
+- koja
+?    ^
+
++ koje
+?    ^
+
+- je
+- sastavljena
+- od
++ su
++ stavljaju
++ na
++ d
+  nekoliko
+  članova
++ među
+- mešunarodne
+? ----
+
++ narodne
+- kancelarije
+?   -
+
++ kacelarije
++ i
++ odlučilo
++ da
+  je
++ nisu
+- odlučila
+- da
+- je
+- niš
+  zbog
+- organizacionog
++ orgarni
++ zacinmog
+  potencijala
++ kako
+  i
+  ljudskih
+  resursa
++ tako
++ i
++ zbog
++ rgalni
++ za
++ slnih
++ kapaciteta
++ samog
++ rada
+- poverila
+?        ^
+
++ poverile
+?        ^
+
+- poverenje
++ povjerenje

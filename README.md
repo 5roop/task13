@@ -85,3 +85,8 @@ Sample size: 1
 Transcripts the nicest. Sometimes the speaker is interrupted and then the transcript gets cut.
 
 Current site (not accessed through web archive) seems not to have the same file structure, nor the transcripts for the content.
+
+# Addendum 2022-06-06T12:56:54
+
+Next step was a sample from Južne Vesti [specifically this one](https://www.juznevesti.com/15-minuta/Marko-Nedeljkovic.sr.html).
+

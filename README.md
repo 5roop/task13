@@ -88,5 +88,11 @@ Current site (not accessed through web archive) seems not to have the same file 
 
 # Addendum 2022-06-06T12:56:54
 
-Next step was a sample from Južne Vesti [specifically this one](https://www.juznevesti.com/15-minuta/Marko-Nedeljkovic.sr.html).
+Next step was a sample from Južne Vesti [specifically this one](https://www.juznevesti.com/15-minuta/Marko-Nedeljkovic.sr.html):
 
+| model                                           |      wer |      cer |
+|:------------------------------------------------|---------:|---------:|
+| classla/wav2vec2-xls-r-parlaspeech-hr-lm        | 0.67979  | 0.544579 |
+| classla/wav2vec2-xls-r-parlaspeech-hr           | 0.701662 | 0.53524  |
+| classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.748031 | 0.557548 |
+| classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.715223 | 0.565849 |

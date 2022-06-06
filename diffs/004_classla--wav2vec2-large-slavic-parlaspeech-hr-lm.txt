@@ -1,0 +1,583 @@
+Model: classla/wav2vec2-large-slavic-parlaspeech-hr-lm,
+cer: 0.48018428063943164, 
+wer: 0.633160621761658
+
+
+- u
+- poznatom
+?        -
+
++ poznato
++ sa
++ ljudskog
+- eseju
+- o
+- jednoj
+- izvanrednoj
+?          ^^
+
++ izvanredne
+?          ^
+
++ receni
++ i
++ sa
++ linsrjedio
+- deceniji
+- isaija
+- berlin
+- je
+- cenio
+  da
+  bi
+  citiram
+- „teško
+? -
+
++ teško
+  bilo
+  u
++ ljudski
++ devtn19toeka
++ naći
+- rusiji
+- 19
+- veka
+- pronaći
+- ijednu
+? -
+
++ jednu
+  jedinu
+  političku
+  i
+  društvenu
+  ideju
+- nastalu
+?       ^
+
++ nastali
+?       ^
+
+  na
+  domaćem
+- tlu“
+?    -
+
++ tlu
+  završen
+  citat
+  te
+  da
++ se
+  sa
+- eventualnim
+?          ^^
+
++ eventualne
+?          ^
+
+- izuzetkom
++ iza
++ ekom
+- tolstojevih
+? ^ -
+
++ sostvojevih
+? ^   +
+
+  ideja
+  o
++ ne
+- nepružanju
+? --
+
++ pružanju
+- otpora
++ otpada
+  sve
+  ideje
+  koje
+  nalazimo
+  ne
+  samo
+  što
+  su
+- izrasle
+?       ^
+
++ izrasla
+?       ^
+
+- iz
+  nekog
+- dalekog
+?       -
+
++ daleko
+- zapadnjačkog
+?     -
+
++ zapanjačkog
+- korena
+?   ^
+
++ koljena
+?   ^^
+
+  nego
+  pripadaju
+  učenjima
+  koja
+  su
+- postojala
+?         ^
+
++ postojale
+?         ^
+
+  na
+  zapadu
+  10
+  ili
+  20
+  godina
+- pre
++ prije
+?   ++
+
+  nego
+  što
+  su
++ sociliput
+- se
+- prvi
+- put
+- pojavila
+?        ^
+
++ pojavili
+?        ^
+
+  u
+  rusiji
++ završe
+  ova
+- ocena
++ ocjena
+?   +
+
+  se
+  ne
+  odnosi
+  samo
+  na
+  onu
++ su
++ usko
++ intlektalnecialicij
+- struju
+- ruske
+- intelektualne
+- tradicije
+  koja
+  se
+- samorazumeva
++ samo
++ razumijeva
+  i
+  označava
+  kao
+  zapadnjačka
+  već
+  kako
+  je
+  to
+  pokazao
+- andžej
+?   -  -
+
++ anže
+  valicki
+  i
+  na
+  ideje
++ urisane
+- formulisane
+- među
+- slovenofilima
++ međuslovenofilima
+? ++++
+
+  koji
+  su
+  u
+  svom
+  učenju
+  o
+- ruskoj
++ ljudskoj
+- kulturnoj
+?         ^
+
++ kulturnog
+?         ^
+
+  samobitnosti
+- polazili
+? -
+
++ olaziliod
+?        ++
+
+- od
+- nemačke
+?  ^
+
++ namačkoie
+?  ^    ++
+
+- filozofije
+  međutim
+  posao
+- istoričara
++ i
++ stoljeća
+  ideja
+  se
+  ne
+- završava
+?   -
+
++ zarješava
+?    ++
+
+  identifikacijom
+  i
+- interpretacijom
+? -    ^^^
+
++ ntentritacijom
+?    ++ ^
+
+  porekla
+- difuzije
+?        ^
+
++ difuziju
+?        ^
+
+  i
+- usvajanja
+?         ^
+
++ usvajanje
+?         ^
+
+  socijalnih
+  i
+  političkih
+  ideja
+  već
+  tu
+- tek
++ je
+  počinje
+  jer
+  kako
+  nas
+  upozorava
+  latinka
+  u
+  ovoj
+  knjizi
++ citiram
+- „ne
+? -
+
++ ne
+  radi
+  se
+  o
+- patentu
+?       ^
+
++ patentne
+?       ^^
+
+- na
+  ideje
+  već
+- o
++ je
+- njihovoj
+?        -
+
++ njihovo
+- socijalnoj
+?          -
+
++ socijalno
+- rezonanci
+? -    -
+
++ ezonnci
+  u
+  ovom
+  ili
+  onom
+- društvu“
+?        -
+
++ društvu
+  stoga
+  se
+- istorija
+  ideja
+  nužno
+- oslanja
++ oslonjen
+  na
+  socijalnu
+  i
+  političku
+  istoriju
+  i
+- kulturnu
+?       -
+
++ kulturu
+  što
+  se
+  obično
+  izražava
+  metaforom
+  o
+  idejama
+  kao
+- semenu
+?  ^
+
++ samenu
+?  ^
+
+  koje
+- procesom
+? -
+
++ rocesom
+  kulturnog
++ prenosaicransfeja
+- prenosa
+- ili
+- transfera
+  padaju
+  na
+  raznorodna
+- tla
++ cla
+  mutiraju
++ i
+  i
+  rađaju
+  različite
+- plodove
+?      ^^
+
++ plodom
+?      ^
+
+  u
+  ovoj
+  kao
+  i
+  u
+  drugim
+- svojim
+- knjigama
++ sojimknjigama
+? +++++
+
+- latinka
+?       ^
+
++ latinke
+?       ^
+
+  istražuje
+- složnu
+?      ^
+
++ složeno
+?     + ^
+
++ đzavsnosttogremena
+- međuzavisnost
+- tog
+- semena
+  ili
+- tih
++ i
+  ideja
+  i
+  tla
+  ili
+  socijalnog
+  konteksta
+  osnovna
+- latinkina
+?         ^
+
++ latinkintez
+?         ^^^
+
+- teza
+- je
+  da
+  su
+  tako
+  shvaćene
+- ruske
++ ljudskih
+- ideje
+?     ^
+
++ ideja
+?     ^
+
+  svoju
+- snažnu
+?      ^
+
++ snažno
+?      ^
+
+- rezonancu
+? --    ^
+
++ zonamcu
+?     ^
+
+  imale
+  pa
+  i
+  danas
+  imaju
+  u
+- srpskom
++ svjetskom
+  društvu
++ tj
+- to
+- jest
+  da
+  su
+  one
+  bile
+- original
++ dima
+  na
+  osnovu
+- kojeg
++ koga
+  su
+  se
++ soinulislroine
++ replkjako
++ ptimolatimtih
++ zakjčaoinlima
+- formulisale
+- brojne
+- replike
+- ako
+- prihvatimo
+- latinkin
+- zaključak
+- o
+- originalima
+- i
+  replikama
+  postavlja
+  se
+  pitanje
+  o
+- karakteristikama
++ kad
++ je
++ kilistikama
+  tla
++ koji
++ sloj
+  koje
+- uslovljavaju
+?     -
+
++ usloljavaju
+  kako
+- formulisanje
++ finuliscanj
++ ljudskih
+  ideja
++ da
++ koi
++ njihovjihvrijeplko
++ stimijepitanu
+- tako
+- i
+- njihovih
+- replika
+- u
+- srbiji
+- jer
+- u
+- pitanju
+  su
+  već
+  na
+  prvi
+  pogled
+  dva
+- društva
+? -
+
++ ruštva
+  koja
+  se
+  ako
+  ne
+  smatramo
+  da
+  je
+- pravoslavlje
+?          ^^^
+
++ pravoslavnu
+?          ^^
+
+- njihova
+?       ^
+
++ njihovo
+?       ^
+
+- suštinska
+?         ^
+
++ suštinskog
+?         ^^
+
+  odredba
+- po
+- svom
+- istorijskom
+?   -
+
++ posvoisorijskom
+? +++++
+
+  razvoju
+- socijalnoj
+?          -
+
++ socijalno
+  strukturi

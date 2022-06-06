@@ -34,3 +34,18 @@ Finally managed to run all models. The metrics are not stellar:
 | classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.75804  | 0.616048 |
 
 The transcript were diffed and are ready for inspection in directory [diffs](diffs).
+
+
+
+# Addendum 2022-06-06T07:45:14
+
+I completed the transcription of [this video](https://pescanik.net/ruske-ideje-i-srpske-replike/) as per the Skype chat  with Nikola on Friday, 12:55 PM.
+
+| model                                           |      wer |      cer |
+|:------------------------------------------------|---------:|---------:|
+| classla/wav2vec2-xls-r-parlaspeech-hr-lm        | 0.582383 | 0.41452  |
+| classla/wav2vec2-xls-r-parlaspeech-hr           | 0.60829  | 0.402753 |
+| classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.633161 | 0.480184 |
+| classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.660449 | 0.461923 |
+
+The metrics are a bit lower, but the same ranking is seen (xls-r > large-slavic, LM helps wer but increases cer.)

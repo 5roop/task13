@@ -49,3 +49,39 @@ I completed the transcription of [this video](https://pescanik.net/ruske-ideje-i
 | classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.660449 | 0.461923 |
 
 The metrics are a bit lower, but the same ranking is seen (xls-r > large-slavic, LM helps wer but increases cer.)
+
+# Addendum 2022-06-06T09:43:03
+
+## Analysis of possible future data sources:
+
+### pescanik.net
+
+Sample size: 2
+
+Transcripts are heavily edited. A lot of manual preprocessing would have to be done to correct them (at least as much time as the length of the audios we acquire).
+
+We would have to download the resources manually. 
+
+Audio: hosted on vimeo and soundcloud (difficult to scrape)
+
+There is quite a lot of resources available though.
+
+### Južne vesti
+
+Sample size: 3
+
+
+Transcripts slightly edited (deleted 'ot prilike', 'znate kako eerrrm', 'eto', 'i,i,i, kako bih rekao...', 'i tako dalje i tako dalje'), some bad spelling (Nišu -> Nipu, mo smo -> mi smo, diektor -> direktor), multiple speakers speaking at once in some cases .
+
+Video hosted on yt (easier to scrape)
+
+
+### B92.net
+
+Accessed via web archive. Difficult to navigate, on the sites with transcripts there is no indication where the audio recording is. -> the searching would be difficult, but the scrapping would be the easiest yet.
+
+Sample size: 1
+
+Transcripts the nicest. Sometimes the speaker is interrupted and then the transcript gets cut.
+
+Current site (not accessed through web archive) seems not to have the same file structure, nor the transcripts for the content.

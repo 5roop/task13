@@ -96,3 +96,15 @@ Next step was a sample from Južne Vesti [specifically this one](https://www.juz
 | classla/wav2vec2-xls-r-parlaspeech-hr           | 0.701662 | 0.53524  |
 | classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.748031 | 0.557548 |
 | classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.715223 | 0.565849 |
+
+# Designing the scrapper for Južne Vesti:
+
+We need text and yt-audio. For now I assume the URL will be given as an input, if needed, we can design a crawler to get them later.
+
+For now I will use the same [link](https://www.juznevesti.com/15-minuta/Marko-Nedeljkovic.sr.html) as above.
+
+
+
+# Addendum 2022-06-07T09:42:58
+
+I won't be able to download the videos here. I plan to do that on my PC where I have plenty of space and time available.

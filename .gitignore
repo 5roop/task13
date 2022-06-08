@@ -97,3 +97,6 @@ runs/
 outputs/
 models/
 fasttext_embeddings/
+
+# data
+audio/

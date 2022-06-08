@@ -108,3 +108,12 @@ For now I will use the same [link](https://www.juznevesti.com/15-minuta/Marko-Ne
 # Addendum 2022-06-07T09:42:58
 
 I won't be able to download the videos here. I plan to do that on my PC where I have plenty of space and time available.
+
+# Addendum 2022-06-08T08:01:07
+
+The videos are now all done, except for one, which is private. I tried watching it on the website, but even there it is private. That instance has been deleted.
+
+All in all, is quite OK. We only failed in 1/300 cases.
+
+The scraping in the first round yielded about 15 missing videos, but when I retried it this morning, it worked OK with the same code. Perhaps YT issued some temporary block for my IP?
+

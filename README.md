@@ -117,3 +117,15 @@ All in all, is quite OK. We only failed in 1/300 cases.
 
 The scraping in the first round yielded about 15 missing videos, but when I retried it this morning, it worked OK with the same code. Perhaps YT issued some temporary block for my IP?
 
+
+
+# Addendum 2022-06-09T12:44:55
+
+Nikola found a recent SABOR yt video to test on. I transcribed it on all models (this is the [file](audio/s1iBR07bVrg_clipped.wav)). I do not have the transcript for it, the model transcriptions are [here](010_some_models_transcriptions.csv), and if I take the original xls-r-parlaspeech-hr model as a base, I can compile this table of similarities:
+
+| model                                           |      wer |       cer |
+|:------------------------------------------------|---------:|----------:|
+| classla/wav2vec2-xls-r-parlaspeech-hr-lm        | 0.144981 | 0.0387541 |
+| classla/wav2vec2-xls-r-parlaspeech-hr           | 0        | 0         |
+| classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.329926 | 0.117841  |
+| classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.282528 | 0.119994  |

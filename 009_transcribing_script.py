@@ -20,8 +20,8 @@ def get_words_and_times(
     processor = Wav2Vec2Processor(
         feature_extractor=feature_extractor, tokenizer=tokenizer)
     model = Wav2Vec2ForCTC.from_pretrained(model_name).cuda()
-    audio_filepath = df.path[0]
-    speech, sample_rate = sf.read(audio_filepath)
+    # audio_filepath = df.path[0]
+    # speech, sample_rate = sf.read(audio_filepath)
     input_values = processor(speech, sampling_rate=sample_rate, return_tensors="pt").input_values.cuda()
 
     logits = model(input_values).logits

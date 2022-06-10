@@ -129,3 +129,6 @@ Nikola found a recent SABOR yt video to test on. I transcribed it on all models 
 | classla/wav2vec2-xls-r-parlaspeech-hr           | 0        | 0         |
 | classla/wav2vec2-large-slavic-parlaspeech-hr    | 0.329926 | 0.117841  |
 | classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.282528 | 0.119994  |
+
+# Addendum 2022-06-10T08:01:50
+When trying to extract temporal data with parlaspeech model, I kept hitting the CPU memory limits. I finally had to resort to 15s of data, although when running it 

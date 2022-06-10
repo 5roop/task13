@@ -131,4 +131,8 @@ Nikola found a recent SABOR yt video to test on. I transcribed it on all models 
 | classla/wav2vec2-large-slavic-parlaspeech-hr-lm | 0.282528 | 0.119994  |
 
 # Addendum 2022-06-10T08:01:50
-When trying to extract temporal data with parlaspeech model, I kept hitting the CPU memory limits. I finally had to resort to 15s of data, although when running it 
+When trying to extract temporal data with parlaspeech model, I kept hitting the CPU memory limits. I finally had to resort to 15s of data, although when running it as a pure transcriber, I can fit up to 
+
+# Addendum 2022-06-10T14:19:24
+
+The temporal data is quite good on small samples. On larger there is some jitter; some words are exactly timed, some are early, some late.

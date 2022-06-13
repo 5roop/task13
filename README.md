@@ -135,4 +135,10 @@ When trying to extract temporal data with parlaspeech model, I kept hitting the 
 
 # Addendum 2022-06-10T14:19:24
 
-The temporal data is quite good on small samples. On larger there is some jitter; some words are exactly timed, some are early, some late.
+The temporal data is quite good on small samples. On larger there is some jitter.
+
+# Addendum 2022-06-13T07:33:51
+
+I checked the performance once again on [this file](audio/s1iBR07bVrg_clipped.wav): at 1,2,3, and 4 minutes the transcriptions and audio match exactly. At 10 and 9 minutes the transcriptions are _leading_ for 3 seconds. At 8 minutes, the mismatch is only 1 second.
+
+I think the way forward is to add another loop and segment files into shorter segments. Then these segments can be processed with existing machinery exactly.

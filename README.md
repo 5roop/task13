@@ -142,3 +142,34 @@ The temporal data is quite good on small samples. On larger there is some jitter
 I checked the performance once again on [this file](audio/s1iBR07bVrg_clipped.wav): at 1,2,3, and 4 minutes the transcriptions and audio match exactly. At 10 and 9 minutes the transcriptions are _leading_ for 3 seconds. At 8 minutes, the mismatch is only 1 second.
 
 I think the way forward is to add another loop and segment files into shorter segments. Then these segments can be processed with existing machinery exactly.
+
+# Addendum 2022-06-13T08:02:58
+
+I noticed an interesting phenomenon. Check this transcription out:
+
+```
+vlasnika            415.23-415.33 -> OK
+tvrtke              415.37-415.55 -> OK 
+i                   415.57-416.41
+imali               416.43-417.44
+smo                 417.46-418.00
+problem             418.04-418.52
+imali               418.54-419.84 -> OK
+smo                 419.86-420.02 -> OK
+problem             420.04-420.36 -> OK
+koji                420.40-420.58 -> OK
+je                  420.60-420.98 -> OK
+```
+
+The middle section doesn't correspond to reality and is likely an artifact of overlapping to assure no words get missed. But if we try it without overlapping, we get this:
+
+```
+vlasnika            415.23-415.33 -> OK
+tvrtke              415.37-415.55 -> OK
+i                   415.57-416.42 ... too early.
+imali               416.44-417.44
+smo                 417.46-418.00
+problem             418.04-418.52
+koji                418.54-419.84
+je                  419.86-419.98
+```

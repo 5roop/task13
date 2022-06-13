@@ -173,3 +173,22 @@ problem             418.04-418.52
 koji                418.54-419.84
 je                  419.86-419.98
 ```
+
+# Addendum 2022-06-13T10:05:51
+
+From [github](https://github.com/danijel3/CroatianSpeech) I downoaded Danijel's notebooks.  [Croatian](danijelscode/Croatian.ipynb) works like a charm. [KaldiAlign](danijelscode/KaldiAlign.ipynb) however doesn't run from the first cell onward. Issues: 
+
+#### Running first cell already complains:
+
+```
+...
+ln: failed to create symbolic link '/usr/local/bin/liblbfgs.la': Permission denied
+ln: failed to create symbolic link '/usr/local/bin/missing': Permission denied
+ln: failed to create symbolic link '/usr/local/bin/install-sh': Permission denied
+/sbin/ldconfig.real: Can't create temporary cache file /etc/ld.so.cache~: Permission denied
+```
+
+#### Can't install openfst-python
+```
+ERROR: Failed building wheel for openfst-python
+```

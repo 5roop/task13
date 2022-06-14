@@ -192,3 +192,7 @@ ln: failed to create symbolic link '/usr/local/bin/install-sh': Permission denie
 ```
 ERROR: Failed building wheel for openfst-python
 ```
+
+# Addendum 2022-06-14T07:26:30
+
+As it turns out, Danijel's machinery was only able to process 143/300 audio files.

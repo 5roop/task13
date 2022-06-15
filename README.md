@@ -196,3 +196,26 @@ ERROR: Failed building wheel for openfst-python
 # Addendum 2022-06-14T07:26:30
 
 As it turns out, Danijel's machinery was only able to process 143/300 audio files.
+
+
+# Addendum 2022-06-14T08:57:52
+
+What was transcribed, works beautifully. Had to do some fiddling to get around Danijel's data handling but it finally works.
+
+
+# Meeting notes 2022-06-14T09:45:33
+
+Target: publish Južne Vesti in a form that closely resembles Parlaspeech. Think of this as designing a new tool to transfer to other projects as well.
+
+
+# Addendum 2022-06-15T09:00:41
+
+I got Danijel's tutorial to work, but only partly. Notes for future: I had problems with installing required packages, namely:
+
+```
+ERROR: Cannot uninstall 'llvmlite'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+```
+
+The fix proved to be `pip install llvmlite --upgrade --ignore-installed llvmlite`.
+
+I still can't run the Kaldi parts.

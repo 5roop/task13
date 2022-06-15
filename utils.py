@@ -1,115 +1,167 @@
-
-
-
-def get_words_and_times(
-    speech, sample_rate, model_name="classla/wav2vec2-xls-r-parlaspeech-hr"
-):
-    from itertools import groupby
-
-    import soundfile as sf
+def process_file(filepath:str):
     import torch
-    from transformers import (Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor,
-                              Wav2Vec2ForCTC, Wav2Vec2Processor)
-    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(
-        model_name,
-        unk_token="[UNK]",
-        # pad_token="[PAD]",
-        # word_delimiter_token=" "
-    )
-    feature_extractor = Wav2Vec2FeatureExtractor(
-        feature_size=1,
-        sampling_rate=sample_rate,
-        padding_value=0.0,
-        do_normalize=True,
-        return_attention_mask=True,
-    )
-    processor = Wav2Vec2Processor(
-        feature_extractor=feature_extractor, tokenizer=tokenizer
-    )
-    model = Wav2Vec2ForCTC.from_pretrained(model_name).cuda()
-    input_values = processor(
-        speech, sampling_rate=sample_rate, return_tensors="pt"
-    ).input_values.cuda()
+    import torchaudio
+    from datasets import load_metric, Dataset
+    from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor, Wav2Vec2ProcessorWithLM
+    import kenlm
+    from pyctcdecode import build_ctcdecoder
+    from IPython.display import Audio
+    from pathlib import Path
+    import json
 
-    logits = model(input_values).logits
+    vad_model, vad_utils = torch.hub.load(repo_or_dir='snakers4/silero-vad',
+                                model='silero_vad',
+                                # force_reload=True
+                                )
 
-    predicted_ids = torch.argmax(logits, dim=-1)
-    transcription = processor.decode(predicted_ids[0]).lower()
+    (get_speech_timestamps,
+    save_audio,
+    read_audio,
+    VADIterator,
+    collect_chunks) = vad_utils
 
-    ##############
-    # this is where the logic starts to get the start and end timestamp for each word
-    ##############
-    words = [w for w in transcription.split() if len(w) > 0]
-    predicted_ids = predicted_ids[0].tolist()
-    duration_sec = input_values.shape[1] / sample_rate
+    wav = read_audio(filepath, sampling_rate=16000)
+    vad_ts=get_speech_timestamps(wav, vad_model, sampling_rate=16000, speech_pad_ms=500, return_seconds=True)
+    # print(f'Found {len(vad_ts)} segments')
 
-    ids_w_time = [
-        (i / len(predicted_ids) * duration_sec, _id)
-        for i, _id in enumerate(predicted_ids)
-        if _id != processor.tokenizer.pad_token_id
-    ]
-    times_and_tokens = [
-        (i, processor.tokenizer.convert_ids_to_tokens(j)) for i, j in ids_w_time
-    ]
-    indices_to_pop = list()
-    for i, tt in enumerate(times_and_tokens):
-        try:
-            if tt[1] == times_and_tokens[i + 1][1]:
-                indices_to_pop.append(i)
-        except IndexError:
-            continue
-    for i in sorted(indices_to_pop)[::-1]:
-        times_and_tokens.pop(i)
-    word_starts = []
-    word_ends = []
-    word_started = True
-    for i, (time, token) in enumerate(times_and_tokens):
-        if word_started:
-            word_starts.append(time)
-            word_started = False
-        if token == " ":
-            word_ends.append(time)
-            word_started = True
-        if i == len(times_and_tokens) - 1:
-            word_ends.append(time)
-    return words, word_starts, word_ends
+    from numpy import ceil
 
 
-def process_file(
-    filename, model_name="classla/wav2vec2-xls-r-parlaspeech-hr", lim_minutes=0.25
-):
-    from itertools import groupby
+    def resample(ts, max_gap=15, max_len=20):
+        ids_to_drop = []
+        for i, s in enumerate(ts):
+            if s["end"] - s["start"] > max_len:
+                print(
+                    f"Error: max_len ({max_len}) is smaller than one of the segments ({s})!"
+                )
 
-    import numpy as np
-    import soundfile as sf
-    import torch
-    from transformers import (Wav2Vec2CTCTokenizer, Wav2Vec2FeatureExtractor,
-                              Wav2Vec2ForCTC, Wav2Vec2Processor)
+                ids_to_drop.append(i)
+        if ids_to_drop != []:
+            new_ts = []
+            for i in range(len(ts)):
+                if i in ids_to_drop:
+                    continue
+                new_ts.append(ts[i])
 
-    speech, sample_rate = sf.read(filename)
-    indices = np.arange(
-        0, speech.shape[0], int(lim_minutes * 60 * sample_rate), dtype=int
-    )
-    transcription = ""
-    word_starts = []
-    word_ends = []
-    overlap_seconds = 1
-    for start, stop in zip(indices, indices[1:]):
-        speech_segment = speech[start : stop + int(sample_rate * overlap_seconds)]
-        words, starts, ends = get_words_and_times(
-            speech_segment, sample_rate, model_name=model_name
+        gts = []
+        g = [ts[0]]
+        for s in ts[1:]:
+            if s["start"] - g[-1]["end"] < max_gap:
+                g.append(s)
+            else:
+                gts.append(g)
+                g = [s]
+        gts.append(g)
+        ret = []
+        for g in gts:
+            l = g[-1]["end"] - g[0]["start"]
+            split_num = ceil(l / max_len)
+            if split_num > 1:
+                min_len = l / split_num
+                start = g[0]["start"]
+                end = g[0]["end"]
+                for s in g[1:]:
+                    if s["end"] - start > max_len or end - start > min_len:
+                        ret.append({"start": start, "end": end})
+                        start = s["start"]
+                        end = s["end"]
+                    else:
+                        end = s["end"]
+                ret.append({"start": start, "end": end})
+            else:
+                ret.append({"start": g[0]["start"], "end": g[-1]["end"]})
+        return ret
+    ts=resample(vad_ts)
+    # print(f'Found {len(ts)} segments')
+    # print(ts)
+
+
+    from numpy import linspace, zeros, logical_and
+
+    wav_data = wav.numpy()
+    T = wav_data.size / 16000.0
+    t = linspace(0, T, wav_data.size)
+
+
+    sil = zeros(10 * (int(T) + 1))  # 10 pts per second
+    sil_x = linspace(0, T, sil.size)
+
+    for n, tx in enumerate(ts):
+        m = logical_and(sil_x >= tx["start"], sil_x <= tx["end"])
+        sil[m] = (n & 1) + 1
+
+    model_name = "classla/wav2vec2-xls-r-parlaspeech-hr"
+    device = "cuda"
+
+    model = Wav2Vec2ForCTC.from_pretrained(model_name).to(device)
+    processor = Wav2Vec2Processor.from_pretrained(model_name)
+
+    sampling_rate = 16000
+
+    files = {"sample": Path(filepath)}
+
+    ds_dict = {"file": [], "start": [], "end": []}
+    for seg in ts:
+        ds_dict["file"].append("sample")
+        ds_dict["start"].append(seg["start"])
+        ds_dict["end"].append(seg["end"])
+    ds = Dataset.from_dict(ds_dict)
+
+    wavcache = {}
+
+
+    def map_to_array(batch):
+        if batch["file"] in wavcache:
+            speech = wavcache[batch["file"]]
+        else:
+            path = files[batch["file"]]
+            speech, _ = torchaudio.load(path)
+            speech = speech.squeeze(0).numpy()
+            wavcache[batch["file"]] = speech
+        sstart = int(batch["start"] * sampling_rate)
+        send = int(batch["end"] * sampling_rate)
+        batch["speech"] = speech[sstart:send]
+        return batch
+
+
+    ds = ds.map(map_to_array)
+
+    # vocab_dict = processor.tokenizer.get_vocab()
+    # sorted_dict = {k.lower(): v for k, v in sorted(vocab_dict.items(), key=lambda item: item[1])}
+    # decoder = build_ctcdecoder(list(sorted_dict.keys()),'danijelscode/lm.arpa',alpha=0.5,beta=1.0)
+    
+    def map_to_pred(batch):
+        features = processor(
+            batch["speech"], sampling_rate=sampling_rate, padding=True, return_tensors="pt"
         )
-        transcription += " " + " ".join(words)
-        word_starts += [i + start / sample_rate for i in starts]
-        word_ends += [i + start / sample_rate for i in ends]
-    start, stop = indices[-1], speech.shape[0]
-    speech_segment = speech[start:]
-    words, starts, ends = get_words_and_times(
-        speech_segment, sample_rate, model_name=model_name
-    )
-    transcription += " " + " ".join(words)
-    word_starts += [i + start / sample_rate for i in starts]
-    word_ends += [i + start / sample_rate for i in ends]
+        input_values = features.input_values.to(device)
+        attention_mask = features.attention_mask.to(device)
+        with torch.no_grad():
+            logits = model(input_values, attention_mask=attention_mask).logits
+        pred_ids = torch.argmax(logits, dim=-1)
+        batch["predicted"] = processor.batch_decode(pred_ids)
+        return batch
 
-    transcription = transcription.replace("[pad]", "")
-    return transcription, word_starts, word_ends
+    # def map_to_pred_lm(batch):
+    #     features = processor(batch["speech"], sampling_rate=16000, padding=True, return_tensors="pt")
+    #     input_values = features.input_values.to(device)
+    #     attention_mask = features.attention_mask.to(device)
+    #     with torch.no_grad():
+    #         logits = model(input_values,attention_mask=attention_mask).logits.cpu().numpy()[0]    
+    #     batch["predicted"] = decoder.decode(logits)
+    #     return batch
+
+
+
+    result = ds.map(map_to_pred, batched=True, batch_size=4)
+    df = result.to_pandas().drop(columns=["speech"])
+    del result
+
+    # result_lm = ds.map(map_to_pred_lm)
+    # df_lm = result_lm.to_pandas().drop(columns=["speech"])
+    # del result_lm
+    df["file"] = filepath
+    # df["predicted_lm"] = df_lm.predicted
+    import torch
+    torch.cuda.empty_cache()
+    return df

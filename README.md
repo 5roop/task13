@@ -219,3 +219,38 @@ ERROR: Cannot uninstall 'llvmlite'. It is a distutils installed project and thus
 The fix proved to be `pip install llvmlite --upgrade --ignore-installed llvmlite`.
 
 I still can't run the Kaldi parts.
+
+# Addendum 2022-06-15T09:27:53
+
+Ok, now I can't even run the code that was running before. I'm getting 
+
+```
+URLError: <urlopen error Tunnel connection failed: 500 Internal Server Error>
+```
+
+I feel this is not on our side, so it might have to be resolved on the Huggingface server. The error is also raised when running old code, so it is not something ASR specific.
+
+# Addendum 2022-06-15T10:12:19
+
+The error persists. Let's use this time to document what Danijel's [Tutorial](parlaspeech/Tutorial.ipynb) is doing:
+
+1. VAD detects speech in audio
+2. utils.vad.resample then groups the speech times so that the segments are appropriately long. (This had to be corrected so that if it cannot segment it, it doesn't crash, it just doesn't include that segment.)
+3. For every segment:
+3.1. segment is saved
+3.2. huggingsound is used (SpeechRecognitionModel, KenshoLMDecoder) to transcribe the segment
+4. Or utils.recognition.process_files can be used. The latter is but a wrapper for all above 
+5. results: 'asr_results.json', structure: {file:, start:, end:, ...}
+
+# Addendum 2022-06-17T08:37:44
+OK, so the matching was performed on what I had transcribed, but I still can't transcribe the rest of the corpus. This time I got 
+
+```
+URLError: <urlopen error [Errno 111] Connection refused>
+```
+
+The error is sporadic, sometimes it gets raised, sometimes not. 
+
+# Addendum 2022-06-27T12:19:50
+
+After rerunning the code once more I obtained more satisfying results: out of 300 files 293 have been properly processed and matched.

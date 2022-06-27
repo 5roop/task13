@@ -98,5 +98,11 @@ outputs/
 models/
 fasttext_embeddings/
 
+nohup.out
+
 # data
 audio/
+
+# Language models
+lm.binary
+danijelscode/lm.arpa

@@ -254,3 +254,17 @@ The error is sporadic, sometimes it gets raised, sometimes not.
 # Addendum 2022-06-27T12:19:50
 
 After rerunning the code once more I obtained more satisfying results: out of 300 files 293 have been properly processed and matched.
+
+# Addendum 2022-06-28T08:37:47
+
+It had been discovered that instead of matched gold transcriptions, the ASR transcripts were used twice. This error has since been fixed.
+
+Should we discard the prompt `JV:`, which suggests that the following will be a question from the anchor for the guest? 
+
+# Meeting notes 2022-06-28T10:15:57
+
+Prepare a log of what exactly has been done with the data.
+ * Open a subfolder in the parlaspeech repo (https://github.com/clarinsi/parlaspeech)
+ * Document there.
+Extract word - level temporal data. Try moving data to new-tantra and doing it in the same fashion as Danijel did.
+Perhaps Danijel's matcher is too strong, because we have easier data to align than Danijel, try implementing it anew.

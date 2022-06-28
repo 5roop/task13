@@ -1,538 +1,0 @@
-Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 43.5, 'end': 65.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 97.2, 'end': 123.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 126.9, 'end': 160.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 168.4, 'end': 253.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 260.4, 'end': 289.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 369.6, 'end': 398.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 398.5, 'end': 465.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 465.0, 'end': 510.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 538.0, 'end': 561.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 600.2, 'end': 627.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 632.8, 'end': 657.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 669.8, 'end': 697.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 714.1, 'end': 757.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 803.1, 'end': 873.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 874.5, 'end': 910.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 910.9, 'end': 941.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 950.3, 'end': 977.5})!
-
-  0%|          | 0/43 [00:00<?, ?ex/s][A
-  2%|▏         | 1/43 [00:00<00:06,  6.51ex/s][A100%|██████████| 43/43 [00:00<00:00, 275.72ex/s]
-
-  0%|          | 0/6 [00:00<?, ?ba/s][A
- 17%|█▋        | 1/6 [00:02<00:11,  2.37s/ba][A
- 33%|███▎      | 2/6 [00:09<00:20,  5.20s/ba][A
- 50%|█████     | 3/6 [00:14<00:15,  5.23s/ba][A
- 67%|██████▋   | 4/6 [00:16<00:07,  3.93s/ba][A
- 83%|████████▎ | 5/6 [00:22<00:04,  4.57s/ba][A
-100%|██████████| 6/6 [00:23<00:00,  3.26s/ba][A100%|██████████| 6/6 [00:23<00:00,  3.86s/ba]
-  0%|          | 1/299 [01:02<5:09:12, 62.26s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-
-  0%|          | 0/49 [00:00<?, ?ex/s][A
-  2%|▏         | 1/49 [00:00<00:06,  6.94ex/s][A100%|██████████| 49/49 [00:00<00:00, 333.24ex/s]
-
-  0%|          | 0/7 [00:00<?, ?ba/s][A
- 14%|█▍        | 1/7 [00:01<00:09,  1.56s/ba][A
- 29%|██▊       | 2/7 [00:03<00:07,  1.53s/ba][A
- 43%|████▎     | 3/7 [00:04<00:06,  1.53s/ba][A
- 57%|█████▋    | 4/7 [00:06<00:04,  1.53s/ba][A
- 71%|███████▏  | 5/7 [00:07<00:03,  1.54s/ba][A
- 86%|████████▌ | 6/7 [00:09<00:01,  1.51s/ba][A100%|██████████| 7/7 [00:09<00:00,  1.32s/ba]
-  1%|          | 2/299 [01:40<3:58:44, 48.23s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-
-  0%|          | 0/57 [00:00<?, ?ex/s][A
-  2%|▏         | 1/57 [00:00<00:08,  6.27ex/s][A100%|██████████| 57/57 [00:00<00:00, 350.05ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:11,  1.59s/ba][A
- 25%|██▌       | 2/8 [00:03<00:09,  1.56s/ba][A
- 38%|███▊      | 3/8 [00:04<00:07,  1.53s/ba][A
- 50%|█████     | 4/8 [00:06<00:06,  1.54s/ba][A
- 62%|██████▎   | 5/8 [00:07<00:04,  1.54s/ba][A
- 75%|███████▌  | 6/8 [00:09<00:03,  1.53s/ba][A
- 88%|████████▊ | 7/8 [00:10<00:01,  1.50s/ba][A100%|██████████| 8/8 [00:10<00:00,  1.35s/ba]
-  1%|          | 3/299 [02:22<3:43:16, 45.26s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 266.5, 'end': 295.1})!
-
-  0%|          | 0/59 [00:00<?, ?ex/s][A
-  2%|▏         | 1/59 [00:00<00:09,  6.04ex/s][A100%|██████████| 59/59 [00:00<00:00, 349.54ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:10,  1.51s/ba][A
- 25%|██▌       | 2/8 [00:02<00:08,  1.47s/ba][A
- 38%|███▊      | 3/8 [00:04<00:08,  1.70s/ba][A
- 50%|█████     | 4/8 [00:06<00:06,  1.66s/ba][A
- 62%|██████▎   | 5/8 [00:08<00:04,  1.65s/ba][A
- 75%|███████▌  | 6/8 [00:09<00:03,  1.64s/ba][A
- 88%|████████▊ | 7/8 [00:11<00:01,  1.63s/ba][A
-100%|██████████| 8/8 [00:11<00:00,  1.26s/ba][A100%|██████████| 8/8 [00:11<00:00,  1.48s/ba]
-  1%|▏         | 4/299 [03:07<3:43:08, 45.38s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 151.2, 'end': 181.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 299.0, 'end': 319.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 321.8, 'end': 398.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 398.4, 'end': 456.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 461.2, 'end': 483.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 483.4, 'end': 504.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 511.4, 'end': 551.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 638.4, 'end': 678.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 712.4, 'end': 741.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 741.5, 'end': 761.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 763.5, 'end': 790.7})!
-
-  0%|          | 0/45 [00:00<?, ?ex/s][A
-  2%|▏         | 1/45 [00:00<00:05,  7.91ex/s][A100%|██████████| 45/45 [00:00<00:00, 346.84ex/s]
-
-  0%|          | 0/6 [00:00<?, ?ba/s][A
- 17%|█▋        | 1/6 [00:01<00:07,  1.50s/ba][A
- 33%|███▎      | 2/6 [00:03<00:07,  1.79s/ba][A
- 50%|█████     | 3/6 [00:09<00:11,  3.93s/ba][A
- 67%|██████▋   | 4/6 [00:12<00:06,  3.44s/ba][A
- 83%|████████▎ | 5/6 [00:15<00:03,  3.14s/ba][A
-100%|██████████| 6/6 [00:16<00:00,  2.49s/ba][A100%|██████████| 6/6 [00:16<00:00,  2.75s/ba]
-  2%|▏         | 5/299 [03:53<3:43:10, 45.55s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 131.1, 'end': 158.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 530.1, 'end': 558.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 579.7, 'end': 612.0})!
-
-  0%|          | 0/61 [00:00<?, ?ex/s][A
-  2%|▏         | 1/61 [00:00<00:11,  5.42ex/s][A100%|██████████| 61/61 [00:00<00:00, 324.49ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:09,  1.35s/ba][A
- 25%|██▌       | 2/8 [00:03<00:10,  1.70s/ba][A
- 38%|███▊      | 3/8 [00:04<00:08,  1.63s/ba][A
- 50%|█████     | 4/8 [00:06<00:07,  1.77s/ba][A
- 62%|██████▎   | 5/8 [00:08<00:05,  1.91s/ba][A
- 75%|███████▌  | 6/8 [00:10<00:03,  1.75s/ba][A
- 88%|████████▊ | 7/8 [00:12<00:01,  1.74s/ba][A
-100%|██████████| 8/8 [00:13<00:00,  1.48s/ba][A100%|██████████| 8/8 [00:13<00:00,  1.63s/ba]
-  2%|▏         | 6/299 [04:39<3:43:07, 45.69s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 513.7, 'end': 534.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 1533.0, 'end': 1554.9})!
-
-  0%|          | 0/98 [00:00<?, ?ex/s][A
-  1%|          | 1/98 [00:00<00:26,  3.63ex/s][A100%|██████████| 98/98 [00:00<00:00, 349.34ex/s]
-
-  0%|          | 0/13 [00:00<?, ?ba/s][A
-  8%|▊         | 1/13 [00:01<00:16,  1.40s/ba][A
- 15%|█▌        | 2/13 [00:02<00:16,  1.51s/ba][A
- 23%|██▎       | 3/13 [00:04<00:15,  1.56s/ba][A
- 31%|███       | 4/13 [00:06<00:13,  1.54s/ba][A
- 38%|███▊      | 5/13 [00:07<00:12,  1.51s/ba][A
- 46%|████▌     | 6/13 [00:09<00:10,  1.52s/ba][A
- 54%|█████▍    | 7/13 [00:10<00:09,  1.53s/ba][A
- 62%|██████▏   | 8/13 [00:12<00:07,  1.55s/ba][A
- 69%|██████▉   | 9/13 [00:13<00:06,  1.52s/ba][A
- 77%|███████▋  | 10/13 [00:15<00:04,  1.52s/ba][A
- 85%|████████▍ | 11/13 [00:16<00:03,  1.52s/ba][A
- 92%|█████████▏| 12/13 [00:18<00:01,  1.52s/ba][A
-100%|██████████| 13/13 [00:18<00:00,  1.14s/ba][A100%|██████████| 13/13 [00:18<00:00,  1.43s/ba]
-  2%|▏         | 7/299 [05:44<4:12:45, 51.94s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 46.5, 'end': 68.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 235.1, 'end': 261.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 261.7, 'end': 285.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 405.3, 'end': 430.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 430.6, 'end': 459.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 590.4, 'end': 617.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 617.2, 'end': 646.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 684.0, 'end': 714.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 715.8, 'end': 741.1})!
-
-  0%|          | 0/55 [00:00<?, ?ex/s][A
-  2%|▏         | 1/55 [00:00<00:07,  7.03ex/s][A100%|██████████| 55/55 [00:00<00:00, 377.93ex/s]
-
-  0%|          | 0/7 [00:00<?, ?ba/s][A
- 14%|█▍        | 1/7 [00:01<00:09,  1.62s/ba][A
- 29%|██▊       | 2/7 [00:03<00:08,  1.73s/ba][A
- 43%|████▎     | 3/7 [00:05<00:06,  1.71s/ba][A
- 57%|█████▋    | 4/7 [00:07<00:05,  1.84s/ba][A
- 71%|███████▏  | 5/7 [00:09<00:03,  1.93s/ba][A
- 86%|████████▌ | 6/7 [00:11<00:01,  1.96s/ba][A
-100%|██████████| 7/7 [00:12<00:00,  1.75s/ba][A100%|██████████| 7/7 [00:12<00:00,  1.80s/ba]
-  3%|▎         | 8/299 [06:27<3:57:30, 48.97s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 47.2, 'end': 69.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 400.3, 'end': 425.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 729.3, 'end': 760.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 1053.1, 'end': 1074.5})!
-
-  0%|          | 0/68 [00:00<?, ?ex/s][A
-  1%|▏         | 1/68 [00:00<00:14,  4.51ex/s][A100%|██████████| 68/68 [00:00<00:00, 301.76ex/s]
-
-  0%|          | 0/9 [00:00<?, ?ba/s][A
- 11%|█         | 1/9 [00:01<00:13,  1.63s/ba][A
- 22%|██▏       | 2/9 [00:03<00:11,  1.60s/ba][A
- 33%|███▎      | 3/9 [00:05<00:10,  1.74s/ba][A
- 44%|████▍     | 4/9 [00:06<00:08,  1.68s/ba][A
- 56%|█████▌    | 5/9 [00:08<00:06,  1.64s/ba][A
- 67%|██████▋   | 6/9 [00:10<00:05,  1.83s/ba][A
- 78%|███████▊  | 7/9 [00:12<00:03,  1.74s/ba][A
- 89%|████████▉ | 8/9 [00:13<00:01,  1.73s/ba][A
-100%|██████████| 9/9 [00:14<00:00,  1.45s/ba][A100%|██████████| 9/9 [00:14<00:00,  1.62s/ba]
-  3%|▎         | 9/299 [07:20<4:02:41, 50.21s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-
-  0%|          | 0/58 [00:00<?, ?ex/s][A
-  2%|▏         | 1/58 [00:00<00:10,  5.59ex/s][A100%|██████████| 58/58 [00:00<00:00, 318.96ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:10,  1.53s/ba][A
- 25%|██▌       | 2/8 [00:03<00:08,  1.50s/ba][A
- 38%|███▊      | 3/8 [00:04<00:07,  1.50s/ba][A
- 50%|█████     | 4/8 [00:05<00:05,  1.44s/ba][A
- 62%|██████▎   | 5/8 [00:07<00:04,  1.42s/ba][A
- 75%|███████▌  | 6/8 [00:08<00:02,  1.46s/ba][A
- 88%|████████▊ | 7/8 [00:10<00:01,  1.46s/ba][A
-100%|██████████| 8/8 [00:10<00:00,  1.13s/ba][A100%|██████████| 8/8 [00:10<00:00,  1.33s/ba]
-  3%|▎         | 10/299 [08:01<3:49:06, 47.57s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 61.4, 'end': 81.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 97.7, 'end': 145.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 161.5, 'end': 201.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 207.9, 'end': 249.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 249.8, 'end': 279.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 295.3, 'end': 355.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 358.0, 'end': 387.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 387.3, 'end': 437.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 437.1, 'end': 510.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 546.3, 'end': 581.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 591.1, 'end': 630.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 630.9, 'end': 665.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 665.5, 'end': 750.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 750.7, 'end': 847.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 889.5, 'end': 912.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 944.4, 'end': 1004.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 1009.6, 'end': 1051.8})!
-
-  0%|          | 0/37 [00:00<?, ?ex/s][A
-  3%|▎         | 1/37 [00:00<00:06,  5.20ex/s][A100%|██████████| 37/37 [00:00<00:00, 190.32ex/s]
-
-  0%|          | 0/5 [00:00<?, ?ba/s][A
- 20%|██        | 1/5 [00:03<00:13,  3.34s/ba][A
- 40%|████      | 2/5 [00:08<00:12,  4.22s/ba][A
- 60%|██████    | 3/5 [00:14<00:10,  5.12s/ba][A
- 80%|████████  | 4/5 [00:23<00:06,  6.65s/ba][A
-100%|██████████| 5/5 [00:26<00:00,  5.33s/ba][A100%|██████████| 5/5 [00:26<00:00,  5.27s/ba]
-  4%|▎         | 11/299 [09:03<4:09:17, 51.93s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 73.2, 'end': 96.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 98.9, 'end': 125.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 252.4, 'end': 289.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 466.6, 'end': 495.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 536.2, 'end': 557.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 567.9, 'end': 601.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 741.1, 'end': 763.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 828.7, 'end': 860.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 903.3, 'end': 924.6})!
-
-  0%|          | 0/56 [00:00<?, ?ex/s][A
-  2%|▏         | 1/56 [00:00<00:08,  6.81ex/s][A100%|██████████| 56/56 [00:00<00:00, 373.45ex/s]
-
-  0%|          | 0/7 [00:00<?, ?ba/s][A
- 14%|█▍        | 1/7 [00:01<00:11,  1.84s/ba][A
- 29%|██▊       | 2/7 [00:04<00:11,  2.28s/ba][A
- 43%|████▎     | 3/7 [00:05<00:07,  1.90s/ba][A
- 57%|█████▋    | 4/7 [00:07<00:05,  1.92s/ba][A
- 71%|███████▏  | 5/7 [00:10<00:04,  2.05s/ba][A
- 86%|████████▌ | 6/7 [00:11<00:01,  1.91s/ba][A
-100%|██████████| 7/7 [00:13<00:00,  1.99s/ba][A100%|██████████| 7/7 [00:13<00:00,  1.99s/ba]
-  4%|▍         | 12/299 [09:49<3:59:05, 49.98s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 138.8, 'end': 165.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 192.8, 'end': 228.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 228.8, 'end': 253.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 345.2, 'end': 370.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 407.5, 'end': 449.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 517.4, 'end': 558.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 632.0, 'end': 654.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 753.6, 'end': 778.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 823.5, 'end': 850.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 865.4, 'end': 891.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 900.8, 'end': 938.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 947.7, 'end': 991.5})!
-
-  0%|          | 0/57 [00:00<?, ?ex/s][A
-  2%|▏         | 1/57 [00:00<00:10,  5.28ex/s][A100%|██████████| 57/57 [00:00<00:00, 295.99ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:09,  1.38s/ba][A
- 25%|██▌       | 2/8 [00:03<00:12,  2.08s/ba][A
- 38%|███▊      | 3/8 [00:05<00:09,  1.90s/ba][A
- 50%|█████     | 4/8 [00:08<00:09,  2.36s/ba][A
- 62%|██████▎   | 5/8 [00:10<00:06,  2.04s/ba][A
- 75%|███████▌  | 6/8 [00:11<00:03,  1.92s/ba][A
- 88%|████████▊ | 7/8 [00:15<00:02,  2.41s/ba][A
-100%|██████████| 8/8 [00:15<00:00,  1.69s/ba][A100%|██████████| 8/8 [00:15<00:00,  1.93s/ba]
-  4%|▍         | 13/299 [10:36<3:55:08, 49.33s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 19.4, 'end': 46.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 96.1, 'end': 127.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 257.8, 'end': 278.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 429.3, 'end': 455.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 467.1, 'end': 490.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 510.1, 'end': 539.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 600.7, 'end': 623.2})!
-
-  0%|          | 0/64 [00:00<?, ?ex/s][A
-  2%|▏         | 1/64 [00:00<00:13,  4.78ex/s][A100%|██████████| 64/64 [00:00<00:00, 301.13ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:02<00:15,  2.16s/ba][A
- 25%|██▌       | 2/8 [00:03<00:10,  1.81s/ba][A
- 38%|███▊      | 3/8 [00:05<00:08,  1.66s/ba][A
- 50%|█████     | 4/8 [00:07<00:07,  1.88s/ba][A
- 62%|██████▎   | 5/8 [00:09<00:05,  1.81s/ba][A
- 75%|███████▌  | 6/8 [00:10<00:03,  1.68s/ba][A
- 88%|████████▊ | 7/8 [00:11<00:01,  1.60s/ba][A
-100%|██████████| 8/8 [00:13<00:00,  1.58s/ba][A100%|██████████| 8/8 [00:13<00:00,  1.69s/ba]
-  5%|▍         | 14/299 [11:24<3:52:17, 48.91s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 153.4, 'end': 173.6})!
-
-  0%|          | 0/67 [00:00<?, ?ex/s][A
-  1%|▏         | 1/67 [00:00<00:12,  5.45ex/s][A100%|██████████| 67/67 [00:00<00:00, 357.86ex/s]
-
-  0%|          | 0/9 [00:00<?, ?ba/s][A
- 11%|█         | 1/9 [00:01<00:12,  1.53s/ba][A
- 22%|██▏       | 2/9 [00:03<00:11,  1.60s/ba][A
- 33%|███▎      | 3/9 [00:04<00:09,  1.58s/ba][A
- 44%|████▍     | 4/9 [00:06<00:08,  1.60s/ba][A
- 56%|█████▌    | 5/9 [00:07<00:06,  1.58s/ba][A
- 67%|██████▋   | 6/9 [00:09<00:04,  1.58s/ba][A
- 78%|███████▊  | 7/9 [00:10<00:03,  1.52s/ba][A
- 89%|████████▉ | 8/9 [00:12<00:01,  1.53s/ba][A
-100%|██████████| 9/9 [00:12<00:00,  1.22s/ba][A100%|██████████| 9/9 [00:12<00:00,  1.44s/ba]
-  5%|▌         | 15/299 [12:13<3:51:20, 48.87s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 11.8, 'end': 31.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 187.9, 'end': 242.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 282.5, 'end': 342.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 342.1, 'end': 368.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 439.9, 'end': 464.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 534.3, 'end': 563.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 612.8, 'end': 662.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 662.2, 'end': 694.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 731.9, 'end': 752.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 752.0, 'end': 773.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 799.2, 'end': 845.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 925.6, 'end': 984.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 984.6, 'end': 1014.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 1065.9, 'end': 1098.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 1109.7, 'end': 1147.9})!
-
-  0%|          | 0/58 [00:00<?, ?ex/s][A
-  2%|▏         | 1/58 [00:00<00:11,  5.02ex/s][A100%|██████████| 58/58 [00:00<00:00, 286.64ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:10,  1.51s/ba][A
- 25%|██▌       | 2/8 [00:05<00:19,  3.24s/ba][A
- 38%|███▊      | 3/8 [00:07<00:13,  2.63s/ba][A
- 50%|█████     | 4/8 [00:09<00:09,  2.40s/ba][A
- 62%|██████▎   | 5/8 [00:13<00:08,  2.80s/ba][A
- 75%|███████▌  | 6/8 [00:16<00:05,  2.91s/ba][A
- 88%|████████▊ | 7/8 [00:21<00:03,  3.46s/ba][A
-100%|██████████| 8/8 [00:21<00:00,  2.44s/ba][A100%|██████████| 8/8 [00:21<00:00,  2.67s/ba]
-  5%|▌         | 16/299 [13:11<4:02:52, 51.49s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 39.6, 'end': 60.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 129.6, 'end': 163.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 235.3, 'end': 265.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 407.5, 'end': 431.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 630.4, 'end': 666.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 865.2, 'end': 887.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 899.1, 'end': 931.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 1029.8, 'end': 1049.9})!
-
-  0%|          | 0/64 [00:00<?, ?ex/s][A
-  2%|▏         | 1/64 [00:00<00:12,  5.09ex/s][A100%|██████████| 64/64 [00:00<00:00, 320.17ex/s]
-
-  0%|          | 0/8 [00:00<?, ?ba/s][A
- 12%|█▎        | 1/8 [00:01<00:10,  1.47s/ba][A
- 25%|██▌       | 2/8 [00:03<00:11,  1.99s/ba][A
- 38%|███▊      | 3/8 [00:05<00:08,  1.64s/ba][A
- 50%|█████     | 4/8 [00:06<00:06,  1.69s/ba][A
- 62%|██████▎   | 5/8 [00:09<00:05,  1.99s/ba][A
- 75%|███████▌  | 6/8 [00:10<00:03,  1.78s/ba][A
- 88%|████████▊ | 7/8 [00:12<00:01,  1.93s/ba][A
-100%|██████████| 8/8 [00:14<00:00,  1.77s/ba][A100%|██████████| 8/8 [00:14<00:00,  1.80s/ba]
-  6%|▌         | 17/299 [13:59<3:56:59, 50.42s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 198.0, 'end': 226.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 479.0, 'end': 502.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 778.2, 'end': 809.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 903.4, 'end': 926.4})!
-
-  0%|          | 0/67 [00:00<?, ?ex/s][A
-  1%|▏         | 1/67 [00:00<00:13,  4.98ex/s][A100%|██████████| 67/67 [00:00<00:00, 327.86ex/s]
-
-  0%|          | 0/9 [00:00<?, ?ba/s][A
- 11%|█         | 1/9 [00:01<00:10,  1.31s/ba][A
- 22%|██▏       | 2/9 [00:03<00:12,  1.74s/ba][A
- 33%|███▎      | 3/9 [00:04<00:09,  1.63s/ba][A
- 44%|████▍     | 4/9 [00:06<00:08,  1.67s/ba][A
- 56%|█████▌    | 5/9 [00:08<00:06,  1.60s/ba][A
- 67%|██████▋   | 6/9 [00:09<00:04,  1.55s/ba][A
- 78%|███████▊  | 7/9 [00:11<00:03,  1.73s/ba][A
- 89%|████████▉ | 8/9 [00:13<00:01,  1.71s/ba][A
-100%|██████████| 9/9 [00:13<00:00,  1.33s/ba][A100%|██████████| 9/9 [00:13<00:00,  1.53s/ba]
-  6%|▌         | 18/299 [14:47<3:53:39, 49.89s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 56.4, 'end': 83.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 101.9, 'end': 138.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 153.6, 'end': 215.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 256.4, 'end': 293.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 304.2, 'end': 326.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 338.4, 'end': 363.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 380.5, 'end': 446.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 466.6, 'end': 490.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 527.0, 'end': 563.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 588.0, 'end': 618.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 644.2, 'end': 669.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 669.6, 'end': 747.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 770.4, 'end': 795.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 808.0, 'end': 838.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 838.4, 'end': 893.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 893.8, 'end': 992.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 993.2, 'end': 1040.0})!
-
-  0%|          | 0/41 [00:00<?, ?ex/s][A
-  2%|▏         | 1/41 [00:00<00:04,  8.45ex/s][A100%|██████████| 41/41 [00:00<00:00, 339.64ex/s]
-
-  0%|          | 0/6 [00:00<?, ?ba/s][A
- 17%|█▋        | 1/6 [00:04<00:23,  4.76s/ba][A
- 33%|███▎      | 2/6 [00:07<00:13,  3.46s/ba][A
- 50%|█████     | 3/6 [00:12<00:12,  4.28s/ba][A
- 67%|██████▋   | 4/6 [00:18<00:10,  5.11s/ba][A
- 83%|████████▎ | 5/6 [00:28<00:06,  6.58s/ba][A100%|██████████| 6/6 [00:28<00:00,  4.70s/ba]
-  6%|▋         | 19/299 [15:49<4:09:29, 53.46s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-
-  0%|          | 0/48 [00:00<?, ?ex/s][A
-  2%|▏         | 1/48 [00:00<00:07,  6.33ex/s][A100%|██████████| 48/48 [00:00<00:00, 298.57ex/s]
-
-  0%|          | 0/6 [00:00<?, ?ba/s][A
- 17%|█▋        | 1/6 [00:01<00:07,  1.50s/ba][A
- 33%|███▎      | 2/6 [00:03<00:06,  1.54s/ba][A
- 50%|█████     | 3/6 [00:04<00:04,  1.55s/ba][A
- 67%|██████▋   | 4/6 [00:06<00:03,  1.55s/ba][A
- 83%|████████▎ | 5/6 [00:07<00:01,  1.56s/ba][A
-100%|██████████| 6/6 [00:09<00:00,  1.58s/ba][A100%|██████████| 6/6 [00:09<00:00,  1.56s/ba]
-  7%|▋         | 20/299 [16:27<3:47:13, 48.87s/it]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Error: max_len (20) is smaller than one of the segments ({'start': 48.0, 'end': 75.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 75.9, 'end': 100.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 108.9, 'end': 139.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 152.7, 'end': 203.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 203.1, 'end': 336.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 343.6, 'end': 405.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 409.3, 'end': 437.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 437.7, 'end': 495.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 529.2, 'end': 614.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 634.2, 'end': 681.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 720.7, 'end': 743.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 743.3, 'end': 792.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 792.7, 'end': 837.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 851.2, 'end': 940.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 954.6, 'end': 991.5})!
-
-  0%|          | 0/30 [00:00<?, ?ex/s][A
-  3%|▎         | 1/30 [00:00<00:05,  5.48ex/s][A100%|██████████| 30/30 [00:00<00:00, 162.78ex/s]
-
-  0%|          | 0/4 [00:00<?, ?ba/s][A
- 25%|██▌       | 1/4 [00:03<00:11,  3.75s/ba][A 25%|██▌       | 1/4 [00:07<00:23,  7.98s/ba]
-  7%|▋         | 20/299 [17:07<3:58:55, 51.38s/it]
-Traceback (most recent call last):
-  File "011_script_for_juzne_vesti.py", line 12, in <module>
-    raise e
-  File "011_script_for_juzne_vesti.py", line 10, in <module>
-    dfs.append(process_file(i))
-  File "/home/peterr/macocu/task13/utils.py", line 156, in process_file
-    result = ds.map(map_to_pred, batched=True, batch_size=8)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2346, in map
-    return self._map_single(
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 532, in wrapper
-    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 499, in wrapper
-    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/fingerprint.py", line 458, in wrapper
-    out = func(self, *args, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2734, in _map_single
-    batch = apply_function_on_filtered_inputs(
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2614, in apply_function_on_filtered_inputs
-    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 2306, in decorated
-    result = f(decorated_item, *args, **kwargs)
-  File "/home/peterr/macocu/task13/utils.py", line 140, in map_to_pred
-    logits = model(input_values, attention_mask=attention_mask).logits
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1716, in forward
-    outputs = self.wav2vec2(
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1361, in forward
-    encoder_outputs = self.encoder(
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 930, in forward
-    layer_outputs = layer(
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 766, in forward
-    hidden_states, attn_weights, _ = self.attention(
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 647, in forward
-    attn_weights = attn_weights.view(bsz, self.num_heads, tgt_len, src_len) + attention_mask
-RuntimeError: CUDA out of memory. Tried to allocate 21.08 GiB (GPU 0; 31.75 GiB total capacity; 25.14 GiB already allocated; 128.75 MiB free; 30.41 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-  0%|          | 0/299 [00:00<?, ?it/s]Using cache found in /home/peterr/.cache/torch/hub/snakers4_silero-vad_master
-  0%|          | 0/299 [00:29<?, ?it/s]
-Error: max_len (20) is smaller than one of the segments ({'start': 43.5, 'end': 65.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 97.2, 'end': 123.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 126.9, 'end': 160.7})!
-Error: max_len (20) is smaller than one of the segments ({'start': 168.4, 'end': 253.8})!
-Error: max_len (20) is smaller than one of the segments ({'start': 260.4, 'end': 289.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 369.6, 'end': 398.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 398.5, 'end': 465.0})!
-Error: max_len (20) is smaller than one of the segments ({'start': 465.0, 'end': 510.3})!
-Error: max_len (20) is smaller than one of the segments ({'start': 538.0, 'end': 561.1})!
-Error: max_len (20) is smaller than one of the segments ({'start': 600.2, 'end': 627.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 632.8, 'end': 657.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 669.8, 'end': 697.5})!
-Error: max_len (20) is smaller than one of the segments ({'start': 714.1, 'end': 757.4})!
-Error: max_len (20) is smaller than one of the segments ({'start': 803.1, 'end': 873.6})!
-Error: max_len (20) is smaller than one of the segments ({'start': 874.5, 'end': 910.9})!
-Error: max_len (20) is smaller than one of the segments ({'start': 910.9, 'end': 941.2})!
-Error: max_len (20) is smaller than one of the segments ({'start': 950.3, 'end': 977.5})!
-Traceback (most recent call last):
-  File "011_script_for_juzne_vesti.py", line 12, in <module>
-    raise e
-  File "011_script_for_juzne_vesti.py", line 10, in <module>
-    dfs.append(process_file(i))
-  File "/home/peterr/macocu/task13/utils.py", line 96, in process_file
-    model = Wav2Vec2ForCTC.from_pretrained(model_name).to(device)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 907, in to
-    return self._apply(convert)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 578, in _apply
-    module._apply(fn)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 578, in _apply
-    module._apply(fn)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 578, in _apply
-    module._apply(fn)
-  [Previous line repeated 2 more times]
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 601, in _apply
-    param_applied = fn(param)
-  File "/home/peterr/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 905, in convert
-    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
-RuntimeError: CUDA error: out of memory
-CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

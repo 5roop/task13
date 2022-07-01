@@ -266,5 +266,16 @@ Should we discard the prompt `JV:`, which suggests that the following will be a 
 Prepare a log of what exactly has been done with the data.
  * Open a subfolder in the parlaspeech repo (https://github.com/clarinsi/parlaspeech)
  * Document there.
-Extract word - level temporal data. Try moving data to new-tantra and doing it in the same fashion as Danijel did.
+Extract word - level temporal data. Try moving data to new-tantra and doing it in the same fashion as Danijel did. This is quite likely full alignment procedure that might actually be enough for this use case.
 Perhaps Danijel's matcher is too strong, because we have easier data to align than Danijel, try implementing it anew.
+
+
+# Addendum 2022-07-01T10:18:03
+
+
+All the files have been processed with Kaldi with Danijel's methodology. For some 15% of the dataset the matching failed. We ended up with some 68 hours of data. I also prepared segments, corresponding with the timestamps of segments identified by Danijel's pipeline.
+
+Word-level temporal data is also extracted from the Kaldi pipeline and preserved.
+
+The pipeline in [notebook 017](017_running_kaldi.ipynb) was run inside parlaspeech directory.
+

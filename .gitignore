@@ -102,7 +102,7 @@ nohup.out
 
 # data
 audio/
-
+seg_audio/
 # Language models
 lm.binary
 danijelscode/lm.arpa

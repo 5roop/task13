@@ -266,5 +266,115 @@ Should we discard the prompt `JV:`, which suggests that the following will be a 
 Prepare a log of what exactly has been done with the data.
  * Open a subfolder in the parlaspeech repo (https://github.com/clarinsi/parlaspeech)
  * Document there.
-Extract word - level temporal data. Try moving data to new-tantra and doing it in the same fashion as Danijel did.
+Extract word - level temporal data. Try moving data to new-tantra and doing it in the same fashion as Danijel did. This is quite likely full alignment procedure that might actually be enough for this use case.
 Perhaps Danijel's matcher is too strong, because we have easier data to align than Danijel, try implementing it anew.
+
+
+
+
+# Addendum 2022-07-01T10:18:03
+
+
+All the files have been processed with Kaldi with Danijel's methodology. For some 15% of the dataset the matching failed. We ended up with some 68 hours of data. I also prepared segments, corresponding with the timestamps of segments identified by Danijel's pipeline.
+
+Word-level temporal data is also extracted from the Kaldi pipeline and preserved.
+
+The pipeline in [notebook 017](017_running_kaldi.ipynb) was run inside parlaspeech directory.
+
+
+
+# Meeting notes 2022-07-01T13:15:40
+
+* Inspect instances where Kaldi failed. Try to explain behaviour.
+* Add back the info on host interjections. `<anchor>bla bla bla</anchor>`
+* Are there more than 2 people speaking?
+* Extract host and guest names from videos.
+* The word level timestamps to be referenced from the beginning of the segment, not whole video. Keep the structure simillar to ParlaSpeech.
+
+# Addendum 2022-07-04T09:36:40
+
+## Processing:
+
+While extracting metadata I noticed that one interview is in english (`https://www.juznevesti.com/15-minuta/Majkl-Kirbi.sr.html,_BzZf0fGg0E,"Gost: Majkl Kirbi, Ambasador SAD u Srbiji`) with bilingual questions and translated answers. This instance will be deleted.
+
+I had to manually correct some transcripts because my parser couldn't keep up with different spellings (some had `Gost: Name Name, guest description`, some only `Name Name, guest description`), and I noticed a bunch of missspellings of `Razgovor vodi...` that were corrected. I also corrected some missspelled names of hosts (`Ljubiva` instead of Ljubica, `Alekandar`...)
+
+I noticed some unbreakable spaces (`\xa0`), but python seems to handle them nicely (splitting on spaces works on them as well.)
+
+Video `2nqEwMZkmuo` has no metadata (video is from 2016), I extrapolated guest name and approximate description, but I can't reconstruct host name. So now their name is `None None`.
+
+## Post - processing
+
+I removed excess whitespace from extracted metadata.
+
+Host named `None None` is now just `None` (proper python NoneType)
+
+I extracted all the host questions from the body.
+
+
+
+## TO-DO:
+
+* ✓ drop all `_BzZf0fGg0E` instances
+* ✓ Transform host name `string: None None` to `NoneType`
+
+# On labeling host questions
+
+Setup: I have Kaldi aligned (normalized) transcripts and extracted questions. My first attempt has been trying to find close matches with difflib. It did not prove to be fruitful: I had to drop the similarity ratio condition quite a bit to get matches, and at this point 2 most closely matched kaldi transcripts do not correspond to host questions:
+
+```
+question='nekoliko puta smo ponavljali da niš od uvođenja višestranačja nijenikada imao veći broj poslanika u skupštini srbije razgovaramo sa slavoljubom vlajkovićem narodnim poslanikom socijalističke partije srbije gospodine vlajkoviću kakav je vaš utisak da li je niš iskoristio to što ili koristi to što ima 12 poslanika nikad više'
+Identified matches:
+::nekoliko puta smo ponavljali da niš od uvođenja višestranačja nijenikada imao veći broj poslanika u skupštini srbije razgovaramo sa slavoljubom vlajkovićem narodnim poslanikom socijalističke partije srbije gospodine vlajkoviću kakav je vaš utisak da li je niš iskoristio to što ili koristi to što ima dvanaest poslanika
+*****
+question='šta je problem'
+Identified matches:
+::gradskog odbora socijalističke partije srbije i narodni
+::nikako drugačije ne bih mogao da shvatim to je ako gledamo iz ugla plaćanja
+*****
+question='ali šta je problem zbog čega vi ne možete da se organizujete vi imate čak u nišu'
+Identified matches:
+::nikako drugačije ne bih mogao da shvatim to je ako gledamo iz ugla plaćanja
+::gradskog odbora socijalističke partije srbije i narodni
+*****
+question='ali vi imate socijalistička partija ima najveći broj poslanika tu ste vi zoran radovanović i ivana dinić'
+Identified matches:
+::pa ima ali ja kažem da bi trebalo grad da kaže nisu to ja mogu individualno ali tako mogu u ime svoje partije ali vi imate socijalistička partija ima najveći broj poslanika tu ste vi zoran radovanović i ivana dinić tako je pa što se tiče nas socijalista mislim da to radimo perfektno
+::gradskog odbora socijalističke partije srbije i narodni
+```
+
+
+All in all there are 5548 host questions to place, so I'd really like to find a software solution instead of placing the anchor tags by hand.
+
+# New approach:
+
+I reran the Kaldi pipeline with a separator where host starts or ends speaking. This now means that I preserve the paragraph structure. I can now match the questions from the corpus with the text, extracted from the segments, but the pipeline is not without its problems: 
+
+```
+Corpus question: Nekoliko puta smo ponavljali da Niš od uvođenja višestranačja nijenikada imao veći broj poslanika u Skupštini Srbije. Razgovaramo sa Slavoljubom Vlajkovićem, narodnim poslanikom Socijalističke partije Srbije. Gospodine Vlajkoviću, kakav je vaš utisak, da li je Niš iskoristio to što ili koristi to što ima 12 poslanika - nikad više?’
+Closest match from segments: ['nekoliko puta smo ponavljali da niš od uvođenja višestranačja nijenikada imao veći broj poslanika u skupštini srbije razgovaramo sa slavoljubom vlajkovićem narodnim poslanikom socijalističke partije srbije gospodine vlajkoviću kakav je vaš utisak da li je niš iskoristio to što ili koristi to što ima dvanaest poslanika nikad više']
+
+***
+Corpus question: Šta je problem?
+Closest match from segments: [' šta je problem']
+Verdict: OK
+***
+Corpus question: Ali šta je problem? Zbog čega vi ne možete da se organizujete? Vi imate čak u Nišu ..
+Closest match from segments: [' ali šta je problem zbog čega vi ne možete da se pa ima ali ja kažem da bi trebalo grad da kaže nisu to ja mogu individualno ali tako mogu u ime svoje partije']
+Verdict: Two speakers at the same time. 
+***
+Corpus question: Ali vi imate, Socijalistička partija ima najveći broj poslanika: tu ste vi, Zoran Radovanović i Ivana Dinić.
+Closest match from segments: [' ali vi imate socijalistička partija ima najveći broj poslanika tu ste vi zoran radovanović i ivana dinić']
+Verdict: OK
+***
+Corpus question: Naš gost je bio Slavoljub Vlajković, predsednik gradskog odbora Socijalističke partije Srbije i narodni poslanik. Moje ime je Predrag Blagojević.
+Closest match from segments: [' hvala što ste odvojili vreme gradskog odbora socijalističke partije srbije i narodni']
+Verdict: Kaldi couldn't match transcriptions properly.
+```
+
+After tagging:
+Calculate average per-character normalized Levenshtein distance and look if the dataset is any good. Discard those below 0.2
+
+Trait_identification paper datasets will have to be published. Prepare them in spare time (four separate files, clearly linking the splits, traits in question and the audio files ). Simplify things (age: only old/young).
+
+Fix classla repos (pull requests.)

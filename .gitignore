@@ -108,3 +108,6 @@ lm.binary
 danijelscode/lm.arpa
 parlaspeech/*
 danijelscode/*
+seg_audio_mp3/*
+audio_mp3/*
+

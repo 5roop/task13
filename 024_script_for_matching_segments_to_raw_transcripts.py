@@ -2,7 +2,8 @@
 import pandas as pd
 import numpy as np
 
-mer = pd.read_json("021_JV_segments_with_metadata.jsonl", orient="records", lines=True)
+# mer = pd.read_json("021_JV_segments_with_metadata.jsonl", orient="records", lines=True)
+mer = pd.read_json("023_JV_segments_matched_speaker_id_added.jsonl", orient="records", lines=True)
 mer = mer[~mer.file.str.contains("_BzZf0fGg0E")]
 corp = pd.read_json("020_JV_with_metadata.jsonl", orient="records", lines=True)
 
@@ -64,7 +65,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 with ProcessPoolExecutor(max_workers=30) as executor:
     results = executor.map(match_kaldi, [row for i, row in mer.iterrows()])
-mer["Raw_transcript__matched_on_kaldi"] = list(results)
+mer["raw_transcript__matched_on_kaldi"] = list(results)
 
 # %%
 mer.to_json("025_segments_matched_with_raw.jsonl", orient="records", lines=True)
@@ -86,8 +87,8 @@ def match_asr(row):
 from concurrent.futures import ProcessPoolExecutor
 
 with ProcessPoolExecutor(max_workers=30) as executor:
-    results = executor.map(match_kaldi, [row for i, row in mer.iterrows()])
-mer["Raw_transcript__matched_on_asr"] = list(results)
+    results = executor.map(match_asr, [row for i, row in mer.iterrows()])
+mer["raw_transcript__matched_on_asr"] = list(results)
 
 # %%
 mer.to_json("025_segments_matched_with_raw.jsonl", orient="records", lines=True)

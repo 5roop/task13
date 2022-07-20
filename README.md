@@ -405,3 +405,28 @@ Some chosen instances on the border of my proposed limit (i.e. 70 similarity_rat
 | 2114 | u dva slučaja to je festival umetničke igre beogradski festival igre | u dva slučaja to je beogradski festival umetničke igre |            3.44444 |                 72 |
 
 
+# Addendum 2022-07-20T09:03:29
+
+After Kaldi sucessfully ran, I matched the ASR and Kaldi output with raw transcriptions. The current implementation can parse the dataset in 8 minutes with 30 processes. The downside is that since it runs on words, not characters, the current implementation drops newlines.
+
+
+## Current dataset composition:
+
+File `025_segments_matched_with_raw.jsonl`:
+* 'file': from which whole-video-file the instance originates. The file is named after video's YT hash, e.g.: audio/58xZSVbpgkk.wav
+* 'segment_file': audio file, covering only the specific instance. 
+* 'start': start timestamp in seconds (of the whole-video-file)
+* 'end': end timestamp in seconds (of the whole-video-file),
+* 'asr_transcription': ASR transcription obtained in the process, 
+* 'kaldi_transcript': Kaldi match,
+* 'Raw_transcript__matched_on_kaldi': raw transcriptions from the webpage (including numerals and punctuation), matched against Kaldi output, 
+* 'Raw_transcript__matched_on_asr': same, matched against ASR output
+* 'guest_name': metadata, 
+* 'guest_description': metadata, 
+* 'host': metadata, 
+* 'kaldi_words': a list of Kaldi words,
+* 'kaldi_word_starts' a list of timestamps in seconds since the beginning of the original video, describing the start of each word in column 'kaldi_words' 
+* 'kaldi_word_ends': same for word ending 
+* 'average_distance': average of word-level Levenshtein distances between ASR and Kaldi, this is only valid for minor differences (it is calculated pair-wise word for word, so when one transcript is `short but wrong in some way` and the other is only `short`, the result is a perfect score)
+* 'similarity_ratio': similarity ratio  between ASR and Kaldi, implementation from `fuzzywuzz.fuzz`. 
+

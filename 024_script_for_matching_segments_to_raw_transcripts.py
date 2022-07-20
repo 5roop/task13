@@ -48,41 +48,46 @@ def find_optimal_subset(segment, full, step=1, limit = None):
     )
 
 def match_kaldi(row):
-    segments_file = row["file"]
-    full_transcript = corp[corp.path == segments_file].transcript.values[0]
-    segments_transcript = row["kaldi_transcript"]
+    try:
+        segments_file = row["file"]
+        full_transcript = corp[corp.path == segments_file].transcript.values[0]
+        segments_transcript = row["kaldi_transcript"]
 
-    coarse = find_optimal_subset(segments_transcript, full_transcript, step=100)
-    medium = find_optimal_subset(segments_transcript,  coarse, step=10, limit=100)
-    fine = find_optimal_subset(segments_transcript,  medium, step=1, limit=10)
-    return fine
+        coarse = find_optimal_subset(segments_transcript, full_transcript, step=100)
+        medium = find_optimal_subset(segments_transcript,  coarse, step=10, limit=100)
+        fine = find_optimal_subset(segments_transcript,  medium, step=1, limit=10)
+        return fine
+    except TypeError:
+        return ""
 
 from concurrent.futures import ProcessPoolExecutor
 
 with ProcessPoolExecutor(max_workers=30) as executor:
     results = executor.map(match_kaldi, [row for i, row in mer.iterrows()])
-mer["Raw_transcript__matched_on_kaldi"] = results
+mer["Raw_transcript__matched_on_kaldi"] = list(results)
 
 # %%
 mer.to_json("025_segments_matched_with_raw.jsonl", orient="records", lines=True)
 
 # %%
 def match_asr(row):
-    segments_file = row["file"]
-    full_transcript = corp[corp.path == segments_file].transcript.values[0]
-    segments_transcript = row["asr_transcription"]
+    try:
+        segments_file = row["file"]
+        full_transcript = corp[corp.path == segments_file].transcript.values[0]
+        segments_transcript = row["asr_transcription"]
 
-    coarse = find_optimal_subset(segments_transcript, full_transcript, step=100)
-    medium = find_optimal_subset(segments_transcript,  coarse, step=10, limit=100)
-    fine = find_optimal_subset(segments_transcript,  medium, step=1, limit=10)
-    return fine
-
+        coarse = find_optimal_subset(segments_transcript, full_transcript, step=100)
+        medium = find_optimal_subset(segments_transcript,  coarse, step=10, limit=100)
+        fine = find_optimal_subset(segments_transcript,  medium, step=1, limit=10)
+        return fine
+    except TypeError:
+        return ""
 
 from concurrent.futures import ProcessPoolExecutor
 
 with ProcessPoolExecutor(max_workers=30) as executor:
     results = executor.map(match_kaldi, [row for i, row in mer.iterrows()])
-mer["Raw_transcript__matched_on_asr"] = results
+mer["Raw_transcript__matched_on_asr"] = list(results)
 
 # %%
 mer.to_json("025_segments_matched_with_raw.jsonl", orient="records", lines=True)

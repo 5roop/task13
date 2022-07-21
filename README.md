@@ -430,3 +430,12 @@ File `025_segments_matched_with_raw.jsonl`:
 * 'average_distance': average of word-level Levenshtein distances between ASR and Kaldi, this is only valid for minor differences (it is calculated pair-wise word for word, so when one transcript is `short but wrong in some way` and the other is only `short`, the result is a perfect score)
 * 'similarity_ratio': similarity ratio  between ASR and Kaldi, implementation from `fuzzywuzz.fuzz`. 
 
+
+
+# Addendum 2022-07-21T09:28:06
+
+Preparing the dataset splits: the data needs to be filtered. 
+
+I discovered that only comparing asr and kaldi outputs is not enough, if we want to learn on raw data, we must also take into account the raw matches that we found. I found that if we compare ASR, Kaldi, ASR match and Kaldi match, we can obtain nice results by dropping all those where one of these os below 75. 
+
+With this I resplit the 

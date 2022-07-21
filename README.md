@@ -438,4 +438,4 @@ Preparing the dataset splits: the data needs to be filtered.
 
 I discovered that only comparing asr and kaldi outputs is not enough, if we want to learn on raw data, we must also take into account the raw matches that we found. I found that if we compare ASR, Kaldi, ASR match and Kaldi match, we can obtain nice results by dropping all those where one of these os below 75. 
 
-With this I resplit the 
+With this filtering I split the dataset into 80-10-10 splits.

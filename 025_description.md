@@ -16,22 +16,22 @@ Lastly, the raw transcriptions were aligned with Kaldi output and ASR recordings
 ## Current dataset composition:
 
 File `025_segments_matched_with_raw.jsonl`:
-* 'file': from which whole-video-file the instance originates. The file is named after video's YT hash, e.g.: audio/58xZSVbpgkk.wav
-* 'segment_file': audio file, covering only the specific instance. 
-* 'start': start timestamp in seconds (of the whole-video-file)
-* 'end': end timestamp in seconds (of the whole-video-file),
-* 'asr_transcription': ASR transcription obtained in the process, 
-* 'kaldi_transcript': Kaldi match,
-* 'raw_transcript__matched_on_kaldi': raw transcriptions from the webpage (including numerals and punctuation), matched against Kaldi output, 
-* 'raw_transcript__matched_on_asr': same, matched against ASR output
-* 'guest_name': metadata, 
-* 'guest_description': metadata, 
-* 'host': metadata, 
-* 'kaldi_words': a list of Kaldi words,
-* 'kaldi_word_starts' a list of timestamps in seconds since the beginning of the original video, describing the start of each word in column 'kaldi_words' 
-* 'kaldi_word_ends': same for word ending 
-* 'speaker_breakdown': a list of tuples ('host', 0, 10), describing whether the host or the guest is speaking and the start and stop timestamps of the segment
-* 'average_distance': average of word-level Levenshtein distances between ASR and Kaldi, this is only valid for minor differences (it is calculated pair-wise word for word, so when one transcript is `short but wrong in some way` and the other is only `short`, the result is a perfect score)
+* `file`: from which whole-video-file the instance originates. The file is named after video's YT hash, e.g.: audio/58xZSVbpgkk.wav
+* `segment_file`: audio file, covering only the specific instance. 
+* `start`: start timestamp in seconds (of the whole-video-file)
+* `end`: end timestamp in seconds (of the whole-video-file),
+* `asr_transcription`: ASR transcription obtained in the process, 
+* `kaldi_transcript`: Kaldi match,
+* `raw_transcript__matched_on_kaldi`: raw transcriptions from the webpage (including numerals and punctuation), matched against Kaldi output, 
+* `raw_transcript__matched_on_asr`: same, matched against ASR output
+* `guest_name`: metadata, 
+* `guest_description`: metadata, 
+* `host`: metadata, 
+* `kaldi_words`: a list of Kaldi words,
+* `kaldi_word_starts` a list of timestamps in seconds since the beginning of the original video, describing the start of each word in column 'kaldi_words' 
+* `kaldi_word_ends`: same for word ending 
+* `speaker_breakdown`: a list of tuples ('host', 0, 10), describing whether the host or the guest is speaking and the start and stop timestamps of the segment
+* `average_distance`: average of word-level Levenshtein distances between ASR and Kaldi, this is only valid for minor differences (it is calculated pair-wise word for word, so when one transcript is `short but wrong in some way` and the other is only `short`, the result is a perfect score)
 * 'similarity_ratio': similarity ratio  between ASR and Kaldi, implementation from `fuzzywuzz.fuzz`. 
 
 ## Possible improvements:

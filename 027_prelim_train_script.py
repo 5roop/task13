@@ -18,13 +18,24 @@ torch.cuda.empty_cache()
 # %%
 import pandas as pd
 import numpy as np
-model_name_or_path = "facebook/wav2vec2-xls-r-300m"
 f = "026_JV_segments_splits.jsonl"
 transcript_column = "raw_transcript__matched_on_kaldi"
+model_name_or_path = "facebook/wav2vec2-xls-r-300m"
+repo_name = "model_01_preprocessed"
 df = pd.read_json(f, orient="records", lines=True)
 
+def preprocess(s: str) -> str:
+    from string import punctuation
+    s = s.replace("JV:", "")
+    for pun in punctuation:
+        s = s.replace(pun, "")
+    return " ".join(
+        s.split()
+    ).casefold()
+
 df["path"] = df.segment_file.apply(lambda s: dict(path=s, bytes=None))
-df["sentence"] = df[transcript_column]
+df["sentence"] = df[transcript_column].apply(preprocess)
+test_on = "dev"
 
 df = df[["path", "sentence", "split"]]
 df.head()
@@ -33,7 +44,6 @@ df.head()
 # ## performing the train_test split
 
 # %%
-test_on = "test"
 common_voice_train_df = df.loc[df.split=="train", :].copy()
 common_voice_test_df = df.loc[df.split==test_on, :].copy()
 
@@ -176,7 +186,6 @@ common_voice_test_mapped = common_voice_test_dataset.map(
 
 
 # %%
-repo_name = "model_01"
 wer_metric = load_metric("wer")
 cer_metric = load_metric("cer")
 def compute_metrics(pred):
@@ -219,7 +228,7 @@ training_args = TrainingArguments(
   gradient_accumulation_steps=4,
   evaluation_strategy="epoch",
   save_strategy="epoch",
-  num_train_epochs=12,
+  num_train_epochs=20,
   gradient_checkpointing=True,
   fp16=True,
   #save_steps=400,

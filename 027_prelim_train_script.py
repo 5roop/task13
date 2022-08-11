@@ -24,14 +24,30 @@ model_name_or_path = "facebook/wav2vec2-xls-r-300m"
 repo_name = "model_01_preprocessed"
 df = pd.read_json(f, orient="records", lines=True)
 
-def preprocess(s: str) -> str:
+# def preprocess(s: str) -> str:
+#     from string import punctuation
+#     s = s.replace("JV:", "")
+#     for pun in punctuation:
+#         s = s.replace(pun, "")
+#     return " ".join(
+#         s.split()
+#     ).casefold()
+
+def preprocess(text: str):
+    from parse import compile
     from string import punctuation
-    s = s.replace("JV:", "")
-    for pun in punctuation:
-        s = s.replace(pun, "")
-    return " ".join(
-        s.split()
-    ).casefold()
+
+    p = compile("{hit:d}.")
+    in_list = text.split()
+    out_list = list()
+    for seg in in_list:
+        parse_result = p.parse(seg)
+        if parse_result:
+            # We got a number with a dot afterward:
+            out_list.append(seg.lower())
+        else:
+            out_list.append(seg.translate(str.maketrans("", "", punctuation)).lower())
+    return " ".join(out_list)
 
 df["path"] = df.segment_file.apply(lambda s: dict(path=s, bytes=None))
 df["sentence"] = df[transcript_column].apply(preprocess)

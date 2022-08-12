@@ -494,7 +494,7 @@ On the other hand, I am very pleased with the performance in regard to filler wo
 * zaštite tj prevencije da ne bi neko izručio komunalni otpad negde gde nije dozvoljeno a jedino mesto gde je dozvoljeno je gradska deponija -> zaštite to jeste prevencij da neko izruči komunalni otpad negd gde nije dozvoljeno a jedino mesto koje je dozvoljeno jeste gradska deponija
 
 Questions for Nikola:
-* Does the raising eval/loss mean that the model is overfitted? -> check out, later models might be more stable. Keep an eye on it.
+* Does the raising eval/loss mean that the model is overfitted? -> check out, models with more epochs might be more stable. Keep an eye on it.
 * Do we want to tinker with further training or should I start benchmarking?
 
 
@@ -503,3 +503,20 @@ TODO:
 * Prepare Južne Vesti dataset as similarly as possible to Parlaspeech dataset to be published on ClarinSI.
 * Prepare the outputs for Nikola, send transcriptions to Nikola, describe the scraping process and add dataset in github/clarinsi/parlspeech/juzne vesti folder.
 * Prepare the model for publication on ModelHub
+
+Responses:
+* Michal's data is published here: https://www.clarin.si/repository/xmlui/handle/11356/1585
+* Benchmark paper (meta) data is prepared here: https://github.com/5roop/ParlaSpeechHRBenchmarkData
+
+
+To discuss with Nikola:
+* In the paper terminology is not consistant, e.g. 'Gender prediction', 'Gender identification', ~~'Gender classification'~~. Should this be corrected?
+* In the paper we use 'Power status', in the dataset we use 'Party status'
+* Link to the github repo should be introduced in chapter 3
+
+Edits so far (on Overleaf): 
+* included `hyperref` package,
+* increased the width of Figure 4 and 5. 
+* Caught a misspelling (langauge) and corrected it
+* Found a weird sentence: `The model fine-tuned on ASR seems to perform slightly better in the full-data scenario, keeping an even score on instances clipped to two seconds its perfect score,`, I deleted `its perfect score`
+* Are we satisfied with the spelling of `macroF1` or should it be written more nicely?

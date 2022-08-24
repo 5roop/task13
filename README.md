@@ -520,3 +520,28 @@ Edits so far (on Overleaf):
 * Caught a misspelling (langauge) and corrected it
 * Found a weird sentence: `The model fine-tuned on ASR seems to perform slightly better in the full-data scenario, keeping an even score on instances clipped to two seconds its perfect score,`, I deleted `its perfect score`
 * Are we satisfied with the spelling of `macroF1` or should it be written more nicely?
+
+# Addendum 2022-08-23T10:26:49
+
+To do re:JuzneVesti dataset:
+* Examine what's going on with zero-length speakers in speaker_breakdown
+* Remove `JV:` tags and `<anchor_*>` tags
+* ? Recalculate (non-normalised) word starts
+
+Nikola's agenda:
+- already mentioned - speaker breakdown has sometimes 0ms entries  
+- even more problematic, only 5 entries have speaker breakdown, the remaining 10806 entries do not have any speaker info at all
+- utterance_id_start and utterance_id_end are always null
+- normalized and original do not have the same scope # Leave it be for now
+- original does not have temporal alignment # Leave it be for now
+- `JV:` should probably not be in original
+- `<anchor*> tags` should not be in normalized
+
+Meeting notes: 
+* drop utterance_id columns
+* timestamps are from the beginning of the videos instead of the segments, mimic parlaspeech timestamping (so add start and end columns, and recalculate timestamps relatively to start)
+
+1. speaker info to be added to all instances, more caution on speaker breakdown start and end points (use the word start times for that, but also breakdown lengths)
+2. utterance_id_start and utterance_id_end are to be removed
+3. JV to be removed from original transcripts
+4. <anchor>s to be removed from normalized transcripts
